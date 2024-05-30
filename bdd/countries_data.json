@@ -1,0 +1,4250 @@
+[
+    {
+        "code": "us",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "39.7837304",
+        "longitude": "-100.4458825",
+        "name": "United States",
+        "nameEs": "Estados Unidos",
+        "nameFr": "\u00c9tats-Unis",
+        "nameNative": "[\"United States\"]",
+        "population": 333680000
+    },
+    {
+        "code": "gb",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "54.7023545",
+        "longitude": "-3.2765753",
+        "name": "United Kingdom",
+        "nameEs": "Reino Unido",
+        "nameFr": "Royaume-Uni",
+        "nameNative": "[\"United Kingdom\"]",
+        "population": 68086000
+    },
+    {
+        "code": "de",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "51.0834196",
+        "longitude": "10.4234469",
+        "name": "Germany",
+        "nameEs": "Alemania",
+        "nameFr": "Allemagne",
+        "nameNative": "[\"Deutschland\"]",
+        "population": 83124000
+    },
+    {
+        "code": "nl",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "52.5001698",
+        "longitude": "5.7480821",
+        "name": "Netherlands",
+        "nameEs": "Pa\u00edses Bajos",
+        "nameFr": "Pays-Bas",
+        "nameNative": "[\"Nederland\"]",
+        "population": 17397000
+    },
+    {
+        "code": "au",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-24.7761086",
+        "longitude": "134.755",
+        "name": "Australia",
+        "nameEs": "Australia",
+        "nameFr": "Australie",
+        "nameNative": "[\"Australia\"]",
+        "population": 25767000
+    },
+    {
+        "code": "br",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-10.3333333",
+        "longitude": "-53.2",
+        "name": "Brazil",
+        "nameEs": "Brasil",
+        "nameFr": "Br\u00e9sil",
+        "nameNative": "[\"Brasil\"]",
+        "population": 213993000
+    },
+    {
+        "code": "ca",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "61.0666922",
+        "longitude": "-107.9917071",
+        "name": "Canada",
+        "nameEs": "Canad\u00e1",
+        "nameFr": "Canada",
+        "nameNative": "[\"Canada\"]",
+        "population": 38023000
+    },
+    {
+        "code": "fr",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "46.603354",
+        "longitude": "1.8883335",
+        "name": "France",
+        "nameEs": "Francia",
+        "nameFr": "France",
+        "nameNative": "[\"France\"]",
+        "population": 65426000
+    },
+    {
+        "code": "it",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "42.6384261",
+        "longitude": "12.674297",
+        "name": "Italy",
+        "nameEs": "Italia",
+        "nameFr": "Italie",
+        "nameNative": "[\"Italia\"]",
+        "population": 60317000
+    },
+    {
+        "code": "in",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "22.3511148",
+        "longitude": "78.6677428",
+        "name": "India",
+        "nameEs": "India",
+        "nameFr": "Inde",
+        "nameNative": "[\"\u092d\u093e\u0930\u0924\"]",
+        "population": 1393409000
+    },
+    {
+        "code": "cn",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "35.000074",
+        "longitude": "104.999927",
+        "name": "China",
+        "nameEs": "China",
+        "nameFr": "Chine",
+        "nameNative": "[\"\u4e2d\u56fd\"]",
+        "population": 1444210000
+    },
+    {
+        "code": "es",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "39.3262345",
+        "longitude": "-4.8380649",
+        "name": "Spain",
+        "nameEs": "Espa\u00f1a",
+        "nameFr": "Espagne",
+        "nameNative": "[\"Espa\u00f1a\"]",
+        "population": 46755000
+    },
+    {
+        "code": "za",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-28.8166236",
+        "longitude": "24.991639",
+        "name": "South Africa",
+        "nameEs": "Sud\u00e1frica",
+        "nameFr": "Afrique du Sud",
+        "nameNative": "[\"South Africa\",\"Suid-Afrika\"]",
+        "population": 60416000
+    },
+    {
+        "code": "mx",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "19.4326296",
+        "longitude": "-99.1331785",
+        "name": "Mexico",
+        "nameEs": "M\u00e9xico",
+        "nameFr": "Mexique",
+        "nameNative": "[\"M\u00e9xico\"]",
+        "population": 130262000
+    },
+    {
+        "code": "dk",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "55.670249",
+        "longitude": "10.3333283",
+        "name": "Denmark",
+        "nameEs": "Dinamarca",
+        "nameFr": "Danemark",
+        "nameNative": "[\"Danmark\"]",
+        "population": 5814000
+    },
+    {
+        "code": "ru",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "64.6863136",
+        "longitude": "97.7453061",
+        "name": "Russia",
+        "nameEs": "Rusia",
+        "nameFr": "Russie",
+        "nameNative": "[\"\u0420\u043e\u0441\u0441\u0438\u044f\"]",
+        "population": 144104000
+    },
+    {
+        "code": "se",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "59.6749712",
+        "longitude": "14.5208584",
+        "name": "Sweden",
+        "nameEs": "Suecia",
+        "nameFr": "Su\u00e8de",
+        "nameNative": "[\"Sverige\"]",
+        "population": 10379000
+    },
+    {
+        "code": "be",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "50.6402809",
+        "longitude": "4.6667145",
+        "name": "Belgium",
+        "nameEs": "B\u00e9lgica",
+        "nameFr": "Belgique",
+        "nameNative": "[\"Belgi\u00eb\",\"Belgique\"]",
+        "population": 11633000
+    },
+    {
+        "code": "ch",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "46.7985624",
+        "longitude": "8.2319736",
+        "name": "Switzerland",
+        "nameEs": "Suiza",
+        "nameFr": "Suisse",
+        "nameNative": "[\"Schweiz\",\"Suisse\"]",
+        "population": 8692000
+    },
+    {
+        "code": "pl",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "52.215933",
+        "longitude": "19.134422",
+        "name": "Poland",
+        "nameEs": "Polonia",
+        "nameFr": "Pologne",
+        "nameNative": "[\"Polska\"]",
+        "population": 37792000
+    },
+    {
+        "code": "ar",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-34.9964963",
+        "longitude": "-64.9672817",
+        "name": "Argentina",
+        "nameEs": "Argentina",
+        "nameFr": "Argentine",
+        "nameNative": "[\"Argentina\"]",
+        "population": 45377000
+    },
+    {
+        "code": "tr",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "38.9597594",
+        "longitude": "34.9249653",
+        "name": "Turkey",
+        "nameEs": "Turqu\u00eda",
+        "nameFr": "Turquie",
+        "nameNative": "[\"T\u00fcrkiye\"]",
+        "population": 85494000
+    },
+    {
+        "code": "jp",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "36.5748441",
+        "longitude": "139.2394179",
+        "name": "Japan",
+        "nameEs": "Jap\u00f3n",
+        "nameFr": "Japon",
+        "nameNative": "[\"\u65e5\u672c\"]",
+        "population": 126050000
+    },
+    {
+        "code": "no",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "64.5731537",
+        "longitude": "11.52803643954819",
+        "name": "Norway",
+        "nameEs": "Noruega",
+        "nameFr": "Norv\u00e8ge",
+        "nameNative": "[\"Norge\",\"Noreg\"]",
+        "population": 5438000
+    },
+    {
+        "code": "nz",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-41.5000831",
+        "longitude": "172.8344077",
+        "name": "New Zealand",
+        "nameEs": "Nueva Zelanda",
+        "nameFr": "Nouvelle-Z\u00e9lande",
+        "nameNative": "[\"New Zealand\",\"Aotearoa\"]",
+        "population": 4993000
+    },
+    {
+        "code": "cl",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-31.7613365",
+        "longitude": "-71.3187697",
+        "name": "Chile",
+        "nameEs": "Chile",
+        "nameFr": "Chili",
+        "nameNative": "[\"Chile\"]",
+        "population": 19177000
+    },
+    {
+        "code": "cz",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "49.8167003",
+        "longitude": "15.4749544",
+        "name": "Czechia",
+        "nameEs": "Republica Checa",
+        "nameFr": "R\u00e9publique Tch\u00e8que",
+        "nameNative": "[\"\u010cesko\"]",
+        "population": 10724000
+    },
+    {
+        "code": "bo",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-17.0568696",
+        "longitude": "-64.9912286",
+        "name": "Bolivia",
+        "nameEs": "Bolivia",
+        "nameFr": "Bolivie",
+        "nameNative": "[\"Bolivia\"]",
+        "population": 11833000
+    },
+    {
+        "code": "pt",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "40.0332629",
+        "longitude": "-7.8896263",
+        "name": "Portugal",
+        "nameEs": "Portugal",
+        "nameFr": "Portugal",
+        "nameNative": "[\"Portugal\"]",
+        "population": 10127000
+    },
+    {
+        "code": "at",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "47.2000338",
+        "longitude": "13.199959",
+        "name": "Austria",
+        "nameEs": "Austria",
+        "nameFr": "Autriche",
+        "nameNative": "[\"\u00d6sterreich\"]",
+        "population": 9013000
+    },
+    {
+        "code": "ie",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "52.865196",
+        "longitude": "-7.9794599",
+        "name": "Ireland",
+        "nameEs": "Irlanda",
+        "nameFr": "Irlande",
+        "nameNative": "[\"\u00c9ire\"]",
+        "population": 4991000
+    },
+    {
+        "code": "ga",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-0.8999695",
+        "longitude": "11.6899699",
+        "name": "Gabon",
+        "nameEs": "Gab\u00f3n",
+        "nameFr": "Gabon",
+        "nameNative": "[\"Gabon\"]",
+        "population": 2278000
+    },
+    {
+        "code": "fi",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "63.2467777",
+        "longitude": "25.9209164",
+        "name": "Finland",
+        "nameEs": "Finlandia",
+        "nameFr": "Finlande",
+        "nameNative": "[\"Suomi\"]",
+        "population": 5543000
+    },
+    {
+        "code": "co",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "2.8894434",
+        "longitude": "-73.783892",
+        "name": "Colombia",
+        "nameEs": "Colombia",
+        "nameFr": "Colombie",
+        "nameNative": "[\"Colombia\"]",
+        "population": 51146000
+    },
+    {
+        "code": "sg",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "1.3408630000000001",
+        "longitude": "103.83039182212079",
+        "name": "Singapore",
+        "nameEs": "Singapur",
+        "nameFr": "Singapour",
+        "nameNative": "[\"Singapore\",\"\u65b0\u52a0\u5761\"]",
+        "population": 5856000
+    },
+    {
+        "code": "ph",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "12.7503486",
+        "longitude": "122.7312101",
+        "name": "Philippines",
+        "nameEs": "Filipinas",
+        "nameFr": "Philippines",
+        "nameNative": "[\"Pilipinas\"]",
+        "population": 111046000
+    },
+    {
+        "code": "ro",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "45.9852129",
+        "longitude": "24.6859225",
+        "name": "Romania",
+        "nameEs": "Rumania",
+        "nameFr": "Roumanie",
+        "nameNative": "[\"Rom\u00e2nia\"]",
+        "population": 19128000
+    },
+    {
+        "code": "ae",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "24.0002488",
+        "longitude": "53.9994829",
+        "name": "United Arab Emirates",
+        "nameEs": "Emiratos \u00c1rabes Unidos",
+        "nameFr": "\u00c9mirats arabes unis",
+        "nameNative": "[\"\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0645\u062a\u062d\u062f\u0629\"]",
+        "population": 9891000
+    },
+    {
+        "code": "ir",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "32.6475314",
+        "longitude": "54.5643516",
+        "name": "Iran",
+        "nameEs": "Iran",
+        "nameFr": "Iran",
+        "nameNative": "[\"\u0627\u06cc\u0631\u0627\u0646\"]",
+        "population": 84539000
+    },
+    {
+        "code": "id",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "-2.4833826",
+        "longitude": "117.8902853",
+        "name": "Indonesia",
+        "nameEs": "Indonesia",
+        "nameFr": "Indon\u00e9sie",
+        "nameNative": "[\"Indonesia\"]",
+        "population": 276361000
+    },
+    {
+        "code": "my",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "4.5693754",
+        "longitude": "102.2656823",
+        "name": "Malaysia",
+        "nameEs": "Malasia",
+        "nameFr": "Malaisie",
+        "nameNative": "[\"Malysia\"]",
+        "population": 32776000
+    },
+    {
+        "code": "gr",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "38.9953683",
+        "longitude": "21.9877132",
+        "name": "Greece",
+        "nameEs": "Grecia",
+        "nameFr": "Gr\u00e8ce",
+        "nameNative": "[\"\u0395\u03bb\u03bb\u03ac\u03b4\u03b1\"]",
+        "population": 10423000
+    },
+    {
+        "code": "ua",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "49.4871968",
+        "longitude": "31.2718321",
+        "name": "Ukraine",
+        "nameEs": "Ucrania",
+        "nameFr": "Ukraine",
+        "nameNative": "[\"\u0423\u043a\u0440\u0430\u0457\u043d\u0430\"]",
+        "population": 43913000
+    },
+    {
+        "code": "il",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "31.5313113",
+        "longitude": "34.8667654",
+        "name": "Israel",
+        "nameEs": "Israel",
+        "nameFr": "Isra\u00ebl",
+        "nameNative": "[\"\u05d9\u05e9\u05e8\u05d0\u05dc\"]",
+        "population": 9198000
+    },
+    {
+        "code": "hu",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "47.1817585",
+        "longitude": "19.5060937",
+        "name": "Hungary",
+        "nameEs": "Hungr\u00eda",
+        "nameFr": "Hongrie",
+        "nameNative": "[\"Magyarorsz\u00e1g\"]",
+        "population": 9636000
+    },
+    {
+        "code": "vn",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "13.2904027",
+        "longitude": "108.4265113",
+        "name": "Vietnam",
+        "nameEs": "Vietnam",
+        "nameFr": "Vietnam",
+        "nameNative": "[\"Vi\u1ec7t Nam\"]",
+        "population": 98349000
+    },
+    {
+        "code": "tw",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "23.9739374",
+        "longitude": "120.9820179",
+        "name": "Taiwan",
+        "nameEs": "Taiw\u00e1n",
+        "nameFr": "Ta\u00efwan",
+        "nameNative": "[\"\u53f0\u7063\"]",
+        "population": 23800000
+    },
+    {
+        "code": "pk",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "30.3308401",
+        "longitude": "71.247499",
+        "name": "Pakistan",
+        "nameEs": "Pakist\u00e1n",
+        "nameFr": "Pakistan",
+        "nameNative": "[\"\u067e\u0627\u06a9\u0633\u062a\u0627\u0646\"]",
+        "population": 225199000
+    },
+    {
+        "code": "kr",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "36.638392",
+        "longitude": "127.6961188",
+        "name": "South Korea",
+        "nameEs": "Corea del Sur",
+        "nameFr": "Cor\u00e9e du Sud",
+        "nameNative": "[\"\ub300\ud55c\ubbfc\uad6d\"]",
+        "population": 51781000
+    },
+    {
+        "code": "pe",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-6.8699697",
+        "longitude": "-75.0458515",
+        "name": "Peru",
+        "nameEs": "Per\u00fa",
+        "nameFr": "P\u00e9rou",
+        "nameNative": "[\"Per\u00fa\"]",
+        "population": 33813000
+    },
+    {
+        "code": "lt",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "55.3500003",
+        "longitude": "23.7499997",
+        "name": "Lithuania",
+        "nameEs": "Lituania",
+        "nameFr": "Lituanie",
+        "nameNative": "[\"Lietuva\"]",
+        "population": 2683000
+    },
+    {
+        "code": "sk",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "48.7411522",
+        "longitude": "19.4528646",
+        "name": "Slovakia",
+        "nameEs": "Eslovaquia",
+        "nameFr": "Slovaquie",
+        "nameNative": "[\"Slovensko\"]",
+        "population": 5460000
+    },
+    {
+        "code": "ng",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "9.6000359",
+        "longitude": "7.9999721",
+        "name": "Nigeria",
+        "nameEs": "Nigeria",
+        "nameFr": "Nigeria",
+        "nameNative": "[\"Nigeria\"]",
+        "population": 213516000
+    },
+    {
+        "code": "th",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "14.8971921",
+        "longitude": "100.83273",
+        "name": "Thailand",
+        "nameEs": "Tailandia",
+        "nameFr": "Tha\u00eflande",
+        "nameNative": "[\"\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22\"]",
+        "population": 70028000
+    },
+    {
+        "code": "hk",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "22.2793278",
+        "longitude": "114.1628131",
+        "name": "Hong Kong",
+        "nameEs": "Hong Kong",
+        "nameFr": "Hong Kong",
+        "nameNative": "[\"\u9999\u6e2f\"]",
+        "population": 7554000
+    },
+    {
+        "code": "hr",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "45.5643442",
+        "longitude": "17.0118954",
+        "name": "Croatia",
+        "nameEs": "Croacia",
+        "nameFr": "Croatie",
+        "nameNative": "[\"Hrvatska\"]",
+        "population": 4052000
+    },
+    {
+        "code": "sa",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "25.6242618",
+        "longitude": "42.3528328",
+        "name": "Saudi Arabia",
+        "nameEs": "Arabia Saudita",
+        "nameFr": "Arabie Saoudite",
+        "nameNative": "[\"\u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629\"]",
+        "population": 35094000
+    },
+    {
+        "code": "eg",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "26.2540493",
+        "longitude": "29.2675469",
+        "name": "Egypt",
+        "nameEs": "Egipto",
+        "nameFr": "Egypte",
+        "nameNative": "[\"\u0645\u0635\u0631\"]",
+        "population": 104124000
+    },
+    {
+        "code": "cc",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "-12.0728315",
+        "longitude": "96.8409375",
+        "name": "Cocos (Keeling) Islands",
+        "nameEs": "Islas Cocos (Keeling)",
+        "nameFr": "\u00celes Cocos (Keeling)",
+        "nameNative": "[\"Cocos (Keeling) Islands\"]",
+        "population": 500
+    },
+    {
+        "code": "ec",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-1.3397668",
+        "longitude": "-79.3666965",
+        "name": "Ecuador",
+        "nameEs": "Ecuador",
+        "nameFr": "Equateur",
+        "nameNative": "[\"Ecuador\"]",
+        "population": 17819000
+    },
+    {
+        "code": "bg",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "42.6073975",
+        "longitude": "25.4856617",
+        "name": "Bulgaria",
+        "nameEs": "Bulgaria",
+        "nameFr": "Bulgarie",
+        "nameNative": "[\"\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f\"]",
+        "population": 6925000
+    },
+    {
+        "code": "ee",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "58.7523778",
+        "longitude": "25.3319078",
+        "name": "Estonia",
+        "nameEs": "Estonia",
+        "nameFr": "Estonie",
+        "nameNative": "[\"Eesti\"]",
+        "population": 1327000
+    },
+    {
+        "code": "uy",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-32.8755548",
+        "longitude": "-56.0201525",
+        "name": "Uruguay",
+        "nameEs": "Uruguay",
+        "nameFr": "Uruguay",
+        "nameNative": "[\"Uruguay\"]",
+        "population": 3480000
+    },
+    {
+        "code": "lv",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "56.8406494",
+        "longitude": "24.7537645",
+        "name": "Latvia",
+        "nameEs": "Letonia",
+        "nameFr": "Lettonie",
+        "nameNative": "[\"Latvija\"]",
+        "population": 1880000
+    },
+    {
+        "code": "nu",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-19.0536414",
+        "longitude": "-169.8613411",
+        "name": "Niue",
+        "nameEs": "Niue",
+        "nameFr": "Niue",
+        "nameNative": "[\"Niue\"]",
+        "population": 1600
+    },
+    {
+        "code": "rs",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "44.1534121",
+        "longitude": "20.55144",
+        "name": "Serbia",
+        "nameEs": "Serbia",
+        "nameFr": "Serbie",
+        "nameNative": "[\"\u0421\u0440\u0431\u0438\u0458\u0430\"]",
+        "population": 6898000
+    },
+    {
+        "code": "ma",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "31.1728205",
+        "longitude": "-7.3362482",
+        "name": "Morocco",
+        "nameEs": "Marruecos",
+        "nameFr": "Maroc",
+        "nameNative": "[\"\u0627\u0644\u0645\u063a\u0631\u0628\"]",
+        "population": 37063000
+    },
+    {
+        "code": "ve",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "8.0018709",
+        "longitude": "-66.1109318",
+        "name": "Venezuela",
+        "nameEs": "Venezuela",
+        "nameFr": "Venezuela",
+        "nameNative": "[\"Venezuela\"]",
+        "population": 28645000
+    },
+    {
+        "code": "bd",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "24.4768783",
+        "longitude": "90.2932426",
+        "name": "Bangladesh",
+        "nameEs": "Bangladesh",
+        "nameFr": "Bangladesh",
+        "nameNative": "[\"\u09ac\u09be\u0982\u09b2\u09be\u09a6\u09c7\u09b6\"]",
+        "population": 166375000
+    },
+    {
+        "code": "lu",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "49.8158683",
+        "longitude": "6.1296751",
+        "name": "Luxembourg",
+        "nameEs": "Luxemburgo",
+        "nameFr": "Luxembourg",
+        "nameNative": "[\"Luxembourg\",\"L\u00ebtzebuerg\"]",
+        "population": 635000
+    },
+    {
+        "code": "lk",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "7.5554942",
+        "longitude": "80.7137847",
+        "name": "Sri Lanka",
+        "nameEs": "Sri Lanka",
+        "nameFr": "Sri Lanka",
+        "nameNative": "[\"\u0dc1\u0dca\u200d\u0dbb\u0dd3 \u0dbd\u0d82\u0d9a\u0dcf\u0dc0\"]",
+        "population": 21444000
+    },
+    {
+        "code": "by",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "53.4250605",
+        "longitude": "27.6971358",
+        "name": "Belarus",
+        "nameEs": "Bielorrusia",
+        "nameFr": "Bi\u00e9lorussie",
+        "nameNative": "[\"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c\"]",
+        "population": 9440000
+    },
+    {
+        "code": "kz",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "47.2286086",
+        "longitude": "65.2093197",
+        "name": "Kazakhstan",
+        "nameEs": "Kazajst\u00e1n",
+        "nameFr": "Kazakhstan",
+        "nameNative": "[\"\u049a\u0430\u0437\u0430\u049b\u0441\u0442\u0430\u043d\"]",
+        "population": 18952000
+    },
+    {
+        "code": "cr",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "10.2735633",
+        "longitude": "-84.0739102",
+        "name": "Costa Rica",
+        "nameEs": "Costa Rica",
+        "nameFr": "Costa Rica",
+        "nameNative": "[\"Costa Rica\"]",
+        "population": 5131000
+    },
+    {
+        "code": "is",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "64.9841821",
+        "longitude": "-18.1059013",
+        "name": "Iceland",
+        "nameEs": "Islandia",
+        "nameFr": "Islande",
+        "nameNative": "[\"\u00cdsland\"]",
+        "population": 364000
+    },
+    {
+        "code": "ke",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "1.4419683",
+        "longitude": "38.4313975",
+        "name": "Kenya",
+        "nameEs": "Kenia",
+        "nameFr": "Kenya",
+        "nameNative": "[\"Kenya\"]",
+        "population": 54795000
+    },
+    {
+        "code": "cy",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "34.9823018",
+        "longitude": "33.1451285",
+        "name": "Cyprus",
+        "nameEs": "Chipre",
+        "nameFr": "Chypre",
+        "nameNative": "[\"\u039a\u03cd\u03c0\u03c1\u03bf\u03c2\",\"K\u0131br\u0131s\"]",
+        "population": 1207000
+    },
+    {
+        "code": "tn",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "33.8439408",
+        "longitude": "9.400138",
+        "name": "Tunisia",
+        "nameEs": "T\u00fanez",
+        "nameFr": "Tunisie",
+        "nameNative": "[\"\u062a\u0648\u0646\u0633\"]",
+        "population": 11904000
+    },
+    {
+        "code": "si",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "45.8133113",
+        "longitude": "14.4808369",
+        "name": "Slovenia",
+        "nameEs": "Eslovenia",
+        "nameFr": "Slov\u00e9nie",
+        "nameNative": "[\"Slovenija\"]",
+        "population": 2094000
+    },
+    {
+        "code": "jo",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "31.1667049",
+        "longitude": "36.941628",
+        "name": "Jordan",
+        "nameEs": "Jord\u00e1n",
+        "nameFr": "Jordan",
+        "nameNative": "[\"\u0627\u0644\u0623\u0631\u062f\u0646\"]",
+        "population": 10441000
+    },
+    {
+        "code": "pa",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "8.559559",
+        "longitude": "-81.1308434",
+        "name": "Panama",
+        "nameEs": "Panam\u00e1",
+        "nameFr": "Panama",
+        "nameNative": "[\"Panam\u00e1\"]",
+        "population": 4423000
+    },
+    {
+        "code": "lb",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "33.8750629",
+        "longitude": "35.843409",
+        "name": "Lebanon",
+        "nameEs": "L\u00edbano",
+        "nameFr": "Liban",
+        "nameNative": "[\"\u0644\u0628\u0646\u0627\u0646\"]",
+        "population": 6813000
+    },
+    {
+        "code": "np",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "28.1083929",
+        "longitude": "84.0917139",
+        "name": "Nepal",
+        "nameEs": "Nepal",
+        "nameFr": "N\u00e9pal",
+        "nameNative": "[\"\u0928\u0947\u092a\u093e\u0932\"]",
+        "population": 30368000
+    },
+    {
+        "code": "do",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "19.0974031",
+        "longitude": "-70.3028026",
+        "name": "Dominican Republic",
+        "nameEs": "Rep\u00fablica Dominicana",
+        "nameFr": "R\u00e9publique dominicaine",
+        "nameNative": "[\"Rep\u00fablica Dominicana\"]",
+        "population": 10927000
+    },
+    {
+        "code": "ge",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "41.6809707",
+        "longitude": "44.0287382",
+        "name": "Georgia",
+        "nameEs": "Georgia",
+        "nameFr": "G\u00e9orgie",
+        "nameNative": "[\"\u10e1\u10d0\u10e5\u10d0\u10e0\u10d7\u10d5\u10d4\u10da\u10dd\"]",
+        "population": 3986000
+    },
+    {
+        "code": "az",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "40.3936294",
+        "longitude": "47.7872508",
+        "name": "Azerbaijan",
+        "nameEs": "Azerbaiy\u00e1n",
+        "nameFr": "Azerba\u00efdjan",
+        "nameNative": "[\"Az\u0259rbaycan\"]",
+        "population": 10221000
+    },
+    {
+        "code": "py",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-23.3165935",
+        "longitude": "-58.1693445",
+        "name": "Paraguay",
+        "nameEs": "Paraguay",
+        "nameFr": "Paraguay",
+        "nameNative": "[\"Paraguay\"]",
+        "population": 7181000
+    },
+    {
+        "code": "zw",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-18.4554963",
+        "longitude": "29.7468414",
+        "name": "Zimbabwe",
+        "nameEs": "Zimbabue",
+        "nameFr": "Zimbabwe",
+        "nameNative": "[\"Zimbabwe\"]",
+        "population": 14947000
+    },
+    {
+        "code": "mk",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "41.6171214",
+        "longitude": "21.7168387",
+        "name": "North Macedonia",
+        "nameEs": "Macedonia del Norte",
+        "nameFr": "Mac\u00e9doine du Nord",
+        "nameNative": "[\"\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430\"]",
+        "population": 2085000
+    },
+    {
+        "code": "gt",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "15.6356088",
+        "longitude": "-89.8988087",
+        "name": "Guatemala",
+        "nameEs": "Guatemala",
+        "nameFr": "Guatemala",
+        "nameNative": "[\"Guatemala\"]",
+        "population": 18132000
+    },
+    {
+        "code": "mt",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "35.8885993",
+        "longitude": "14.4476911",
+        "name": "Malta",
+        "nameEs": "Malta",
+        "nameFr": "Malte",
+        "nameNative": "[\"Malta\"]",
+        "population": 442000
+    },
+    {
+        "code": "om",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "21.0000287",
+        "longitude": "57.0036901",
+        "name": "Oman",
+        "nameEs": "Om\u00e1n",
+        "nameFr": "Oman",
+        "nameNative": "[\"\u0639\u0645\u0627\u0646\"]",
+        "population": 5188000
+    },
+    {
+        "code": "tk",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-9.1676396",
+        "longitude": "-171.8196878",
+        "name": "Tokelau",
+        "nameEs": "Tokelau",
+        "nameFr": "Tokelau",
+        "nameNative": "[\"Tokelau\"]",
+        "population": 1500
+    },
+    {
+        "code": "ba",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "44.3053476",
+        "longitude": "17.5961467",
+        "name": "Bosnia and Herzegovina",
+        "nameEs": "Bosnia y Herzegovina",
+        "nameFr": "Bosnie Herz\u00e9govine",
+        "nameNative": "[\"Bosna i Hercegovina\"]",
+        "population": 3280000
+    },
+    {
+        "code": "gh",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "8.0300284",
+        "longitude": "-1.0800271",
+        "name": "Ghana",
+        "nameEs": "Ghana",
+        "nameFr": "Ghana",
+        "nameNative": "[\"Ghana\"]",
+        "population": 31732000
+    },
+    {
+        "code": "tz",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-6.5247123",
+        "longitude": "35.7878438",
+        "name": "Tanzania",
+        "nameEs": "Tanzania",
+        "nameFr": "Tanzanie",
+        "nameNative": "[\"Tanzania\"]",
+        "population": 61498000
+    },
+    {
+        "code": "dz",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "28.0000272",
+        "longitude": "2.9999825",
+        "name": "Algeria",
+        "nameEs": "Argelia",
+        "nameFr": "Alg\u00e9rie",
+        "nameNative": "[\"\u0627\u0644\u062c\u0632\u0627\u0626\u0631\"]",
+        "population": 44661000
+    },
+    {
+        "code": "kw",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "29.2733964",
+        "longitude": "47.4979476",
+        "name": "Kuwait",
+        "nameEs": "Kuwait",
+        "nameFr": "Koweit",
+        "nameNative": "[\"\u0627\u0644\u0643\u0648\u064a\u062a\"]",
+        "population": 4270000
+    },
+    {
+        "code": "md",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "47.2879608",
+        "longitude": "28.5670941",
+        "name": "Moldova",
+        "nameEs": "Moldavia",
+        "nameFr": "Moldavie",
+        "nameNative": "[\"Moldova\"]",
+        "population": 4026000
+    },
+    {
+        "code": "qa",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "25.3336984",
+        "longitude": "51.2295295",
+        "name": "Qatar",
+        "nameEs": "Katar",
+        "nameFr": "Qatar",
+        "nameNative": "[\"\u0642\u0637\u0631\"]",
+        "population": 2817000
+    },
+    {
+        "code": "ug",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "1.5333554",
+        "longitude": "32.2166578",
+        "name": "Uganda",
+        "nameEs": "Uganda",
+        "nameFr": "Ouganda",
+        "nameNative": "[\"Uganda\"]",
+        "population": 47125000
+    },
+    {
+        "code": "bz",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "16.8259793",
+        "longitude": "-88.7600927",
+        "name": "Belize",
+        "nameEs": "Belice",
+        "nameFr": "Belize",
+        "nameNative": "[\"Belize\"]",
+        "population": 398000
+    },
+    {
+        "code": "cm",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "4.6125522",
+        "longitude": "13.1535811",
+        "name": "Cameroon",
+        "nameEs": "Camer\u00fan",
+        "nameFr": "Cameroun",
+        "nameNative": "[\"Cameroun\"]",
+        "population": 27331000
+    },
+    {
+        "code": "mu",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-20.2759451",
+        "longitude": "57.5703566",
+        "name": "Mauritius",
+        "nameEs": "Mauricio",
+        "nameFr": "\u00cele Maurice",
+        "nameNative": "[\"Maurice\"]",
+        "population": 1269000
+    },
+    {
+        "code": "tt",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "10.8677845",
+        "longitude": "-60.9821067",
+        "name": "Trinidad and Tobago",
+        "nameEs": "Trinidad y Tobago",
+        "nameFr": "Trinit\u00e9-et-Tobago",
+        "nameNative": "[\"Trinidad and Tobago\"]",
+        "population": 1400000
+    },
+    {
+        "code": "bh",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "26.1551249",
+        "longitude": "50.5344606",
+        "name": "Bahrain",
+        "nameEs": "Bahr\u00e9in",
+        "nameFr": "Bahre\u00efn",
+        "nameNative": "[\"\u0627\u0644\u0628\u062d\u0631\u064a\u0646\"]",
+        "population": 1702000
+    },
+    {
+        "code": "kh",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "13.5066394",
+        "longitude": "104.869423",
+        "name": "Cambodia",
+        "nameEs": "Camboya",
+        "nameFr": "Cambodge",
+        "nameNative": "[\"\u1780\u1798\u17d2\u1796\u17bb\u1787\u17b6\"]",
+        "population": 16972000
+    },
+    {
+        "code": "ci",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "7.9897371",
+        "longitude": "-5.5679458",
+        "name": "C\u00f4te d'Ivoire",
+        "nameEs": "Costa de Marfil",
+        "nameFr": "C\u00f4te d'Ivoire",
+        "nameNative": "[\"C\u00f4te d'Ivoire\"]",
+        "population": 28873034
+    },
+    {
+        "code": "mn",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "46.8250388",
+        "longitude": "103.8499736",
+        "name": "Mongolia",
+        "nameEs": "Mongolia",
+        "nameFr": "Mongolie",
+        "nameNative": "[\"\u041c\u043e\u043d\u0433\u043e\u043b \u0443\u043b\u0441\"]",
+        "population": 3345000
+    },
+    {
+        "code": "sv",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "13.8000382",
+        "longitude": "-88.9140683",
+        "name": "El Salvador",
+        "nameEs": "El Salvador",
+        "nameFr": "Salvador",
+        "nameNative": "[\"El Salvador\"]",
+        "population": 6533000
+    },
+    {
+        "code": "sn",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "14.4750607",
+        "longitude": "-14.4529612",
+        "name": "Senegal",
+        "nameEs": "Senegal",
+        "nameFr": "S\u00e9n\u00e9gal",
+        "nameNative": "[\"S\u00e9n\u00e9gal\"]",
+        "population": 17486000
+    },
+    {
+        "code": "uz",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "41.32373",
+        "longitude": "63.9528098",
+        "name": "Uzbekistan",
+        "nameEs": "Uzbekistan",
+        "nameFr": "Ouzb\u00e9kistan",
+        "nameNative": "[\"O'zbekiston\"]",
+        "population": 34192000
+    },
+    {
+        "code": "af",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "33.7680065",
+        "longitude": "66.2385139",
+        "name": "Afghanistan",
+        "nameEs": "Afganist\u00e1n",
+        "nameFr": "Afghanistan",
+        "nameNative": "[\"\u0627\u0641\u063a\u0627\u0646\u0633\u062a\u0627\u0646\"]",
+        "population": 38928000
+    },
+    {
+        "code": "jm",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "18.1152958",
+        "longitude": "-77.1598454610168",
+        "name": "Jamaica",
+        "nameEs": "Jamaica",
+        "nameFr": "Jama\u00efque",
+        "nameNative": "[\"Jamaica\"]",
+        "population": 2973000
+    },
+    {
+        "code": "sy",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "34.6401861",
+        "longitude": "39.0494106",
+        "name": "Syria",
+        "nameEs": "Siria",
+        "nameFr": "Syrie",
+        "nameNative": "[\"\u0633\u0648\u0631\u064a\u0627\"]",
+        "population": 17812000
+    },
+    {
+        "code": "am",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "40.7696272",
+        "longitude": "44.6736646",
+        "name": "Armenia",
+        "nameEs": "Armenia",
+        "nameFr": "Arm\u00e9nie",
+        "nameNative": "[\"\u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\"]",
+        "population": 2963000
+    },
+    {
+        "code": "ni",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "12.6090157",
+        "longitude": "-85.2936911",
+        "name": "Nicaragua",
+        "nameEs": "Nicaragua",
+        "nameFr": "Nicaragua",
+        "nameNative": "[\"Nicaragua\"]",
+        "population": 6766000
+    },
+    {
+        "code": "cd",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-2.9814344",
+        "longitude": "23.8222636",
+        "name": "Democratic Republic of the Congo",
+        "nameEs": "Rep\u00fablica Democr\u00e1tica del Congo",
+        "nameFr": "R\u00e9publique D\u00e9mocratique du Congo",
+        "nameNative": "[\"R\u00e9publique D\u00e9mocratique du Congo\"]",
+        "population": 92378000
+    },
+    {
+        "code": "iq",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "33.0955793",
+        "longitude": "44.1749775",
+        "name": "Iraq",
+        "nameEs": "Irak",
+        "nameFr": "Irak",
+        "nameNative": "[\"\u0627\u0644\u0639\u0631\u0627\u0642\"]",
+        "population": 40966000
+    },
+    {
+        "code": "ps",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "31.7621153",
+        "longitude": "-95.6307891",
+        "name": "Palestine",
+        "nameEs": "Palestina",
+        "nameFr": "Palestine",
+        "nameNative": "[\"\u0641\u0644\u0633\u0637\u064a\u0646\"]",
+        "population": 5188000
+    },
+    {
+        "code": "hn",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "15.2572432",
+        "longitude": "-86.0755145",
+        "name": "Honduras",
+        "nameEs": "Honduras",
+        "nameFr": "Honduras",
+        "nameNative": "[\"Honduras\"]",
+        "population": 10271000
+    },
+    {
+        "code": "ao",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-11.8775768",
+        "longitude": "17.5691241",
+        "name": "Angola",
+        "nameEs": "Angola",
+        "nameFr": "Angola",
+        "nameNative": "[\"Angola\"]",
+        "population": 32866000
+    },
+    {
+        "code": "bw",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-23.1681782",
+        "longitude": "24.5928742",
+        "name": "Botswana",
+        "nameEs": "Botswana",
+        "nameFr": "Botswana",
+        "nameNative": "[\"Botswana\"]",
+        "population": 2385000
+    },
+    {
+        "code": "al",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "41.000028",
+        "longitude": "19.9999619",
+        "name": "Albania",
+        "nameEs": "Albania",
+        "nameFr": "Albanie",
+        "nameNative": "[\"Shqip\u00ebria\"]",
+        "population": 2878000
+    },
+    {
+        "code": "ml",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "16.3700359",
+        "longitude": "-2.2900239",
+        "name": "Mali",
+        "nameEs": "Mali",
+        "nameFr": "Mali",
+        "nameNative": "[\"Mali\"]",
+        "population": 20919000
+    },
+    {
+        "code": "zm",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-14.5186239",
+        "longitude": "27.5599164",
+        "name": "Zambia",
+        "nameEs": "Zambia",
+        "nameFr": "Zambie",
+        "nameNative": "[\"Zambia\"]",
+        "population": 18652000
+    },
+    {
+        "code": "mc",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "43.73844905",
+        "longitude": "7.424224092532953",
+        "name": "Monaco",
+        "nameEs": "M\u00f3naco",
+        "nameFr": "Monaco",
+        "nameNative": "[\"Monaco\"]",
+        "population": 39000
+    },
+    {
+        "code": "et",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "10.2116702",
+        "longitude": "38.6521203",
+        "name": "Ethiopia",
+        "nameEs": "Etiop\u00eda",
+        "nameFr": "Ethiopie",
+        "nameNative": "[\"\u12a2\u1275\u12ee\u1335\u12eb\"]",
+        "population": 118063000
+    },
+    {
+        "code": "pw",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "7.3245000000000005",
+        "longitude": "134.496454875",
+        "name": "Palau",
+        "nameEs": "Palau",
+        "nameFr": "Palau",
+        "nameNative": "[\"Belau\"]",
+        "population": 18000
+    },
+    {
+        "code": "je",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "49.21230655",
+        "longitude": "-2.1255999596428845",
+        "name": "Jersey",
+        "nameEs": "Jersey",
+        "nameFr": "Jersey",
+        "nameNative": "[\"Jersey\"]",
+        "population": 101000
+    },
+    {
+        "code": "mm",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "17.1750495",
+        "longitude": "95.9999652",
+        "name": "Myanmar",
+        "nameEs": "Myanmar",
+        "nameFr": "Myanmar",
+        "nameNative": "[\"\u1019\u103c\u1014\u103a\u1019\u102c\"]",
+        "population": 54541000
+    },
+    {
+        "code": "ky",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "19.5417212",
+        "longitude": "-80.5667132",
+        "name": "Cayman Islands",
+        "nameEs": "Islas Caim\u00e1n",
+        "nameFr": "\u00celes Ca\u00efmans",
+        "nameNative": "[\"Cayman Islands\"]",
+        "population": 66000
+    },
+    {
+        "code": "mv",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "4.7064352",
+        "longitude": "73.3287853",
+        "name": "Maldives",
+        "nameEs": "Maldivas",
+        "nameFr": "Maldives",
+        "nameNative": "[\"\u078b\u07a8\u0788\u07ac\u0780\u07a8\u0783\u07a7\u0787\u07b0\u0796\u07ad\u078e\u07ac\"]",
+        "population": 543000
+    },
+    {
+        "code": "ne",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "17.7356214",
+        "longitude": "9.3238432",
+        "name": "Niger",
+        "nameEs": "N\u00edger",
+        "nameFr": "Niger",
+        "nameNative": "[\"Niger\"]",
+        "population": 24746000
+    },
+    {
+        "code": "cu",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "23.0131338",
+        "longitude": "-80.8328748",
+        "name": "Cuba",
+        "nameEs": "Cuba",
+        "nameFr": "Cuba",
+        "nameNative": "[\"Cuba\"]",
+        "population": 11328000
+    },
+    {
+        "code": "cf",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "7.0323598",
+        "longitude": "19.9981227",
+        "name": "Central African Republic",
+        "nameEs": "Rep\u00fablica Centroafricana",
+        "nameFr": "R\u00e9publique centrafricaine",
+        "nameNative": "[\"R\u00e9publique centrafricaine\"]",
+        "population": 4918000
+    },
+    {
+        "code": "mg",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-18.9249604",
+        "longitude": "46.4416422",
+        "name": "Madagascar",
+        "nameEs": "Madagascar",
+        "nameFr": "Madagascar",
+        "nameNative": "[\"Madagasikara\"]",
+        "population": 28262000
+    },
+    {
+        "code": "kg",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "41.5089324",
+        "longitude": "74.724091",
+        "name": "Kyrgyzstan",
+        "nameEs": "Kirguist\u00e1n",
+        "nameFr": "Kirghizistan",
+        "nameNative": "[\"\u041a\u044b\u0440\u0433\u044b\u0437\u0441\u0442\u0430\u043d\"]",
+        "population": 6632000
+    },
+    {
+        "code": "gi",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "36.140807",
+        "longitude": "-5.3541295",
+        "name": "Gibraltar",
+        "nameEs": "Gibraltar",
+        "nameFr": "Gibraltar",
+        "nameNative": "[\"Gibraltar\"]",
+        "population": 34000
+    },
+    {
+        "code": "im",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "54.2358167",
+        "longitude": "-4.514598745698255",
+        "name": "Isle of Man",
+        "nameEs": "Isla del hombre",
+        "nameFr": "\u00cele de Man",
+        "nameNative": "[\"Isle of Man\"]",
+        "population": 85000
+    },
+    {
+        "code": "ly",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "26.8234472",
+        "longitude": "18.1236723",
+        "name": "Libya",
+        "nameEs": "Libia",
+        "nameFr": "Libye",
+        "nameNative": "[\"\u0644\u064a\u0628\u064a\u0627\"]",
+        "population": 6981000
+    },
+    {
+        "code": "re",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-21.130737949999997",
+        "longitude": "55.536480112992315",
+        "name": "Reunion",
+        "nameEs": "Reuni\u00f3n",
+        "nameFr": "R\u00e9union",
+        "nameNative": "[\"R\u00e9union\"]",
+        "population": 895000
+    },
+    {
+        "code": "st",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "0.8875498",
+        "longitude": "6.9648718",
+        "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "nameEs": "Santo Tom\u00e9 y Pr\u00edncipe",
+        "nameFr": "S\u00e3o Tom\u00e9 et Pr\u00edncipe",
+        "nameNative": "[\"S\u00e3o Tom\u00e9 e Pr\u00edncipe\"]",
+        "population": 219000
+    },
+    {
+        "code": "fj",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-18.1239696",
+        "longitude": "179.0122737",
+        "name": "Fiji",
+        "nameEs": "Fiyi",
+        "nameFr": "Fidji",
+        "nameNative": "[\"Viti\"]",
+        "population": 901000
+    },
+    {
+        "code": "bb",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "13.1500331",
+        "longitude": "-59.5250305",
+        "name": "Barbados",
+        "nameEs": "Barbados",
+        "nameFr": "Barbade",
+        "nameNative": "[\"Barbados\"]",
+        "population": 287000
+    },
+    {
+        "code": "bm",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "32.3018217",
+        "longitude": "-64.7603583",
+        "name": "Bermuda",
+        "nameEs": "Bermudas",
+        "nameFr": "Bermudes",
+        "nameNative": "[\"Bermuda\"]",
+        "population": 62000
+    },
+    {
+        "code": "fo",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "62.19850045",
+        "longitude": "-6.817412433412175",
+        "name": "Faroe Islands",
+        "nameEs": "Islas Faroe",
+        "nameFr": "\u00celes F\u00e9ro\u00e9",
+        "nameNative": "[\"F\u00f8royar\"]",
+        "population": 49000
+    },
+    {
+        "code": "sd",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "14.5844444",
+        "longitude": "29.4917691",
+        "name": "Sudan",
+        "nameEs": "Sud\u00e1n",
+        "nameFr": "Soudan",
+        "nameNative": "[\"\u0627\u0644\u0633\u0648\u062f\u0627\u0646\"]",
+        "population": 43853000
+    },
+    {
+        "code": "mz",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-19.302233",
+        "longitude": "34.9144977",
+        "name": "Mozambique",
+        "nameEs": "Mozambique",
+        "nameFr": "Mozambique",
+        "nameNative": "[\"Mo\u00e7ambique\"]",
+        "population": 31689000
+    },
+    {
+        "code": "pg",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-5.6816069",
+        "longitude": "144.2489081",
+        "name": "Papua New Guinea",
+        "nameEs": "Pap\u00faa Nueva Guinea",
+        "nameFr": "Papouasie Nouvelle Guin\u00e9e",
+        "nameNative": "[\"Papua Niugini\"]",
+        "population": 9119000
+    },
+    {
+        "code": "na",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-23.2335499",
+        "longitude": "17.3231107",
+        "name": "Namibia",
+        "nameEs": "Namibia",
+        "nameFr": "Namibie",
+        "nameNative": "[\"Namibia\"]",
+        "population": 2555000
+    },
+    {
+        "code": "gq",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "1.613172",
+        "longitude": "10.5170357",
+        "name": "Equatorial Guinea",
+        "nameEs": "Guinea Ecuatorial",
+        "nameFr": "Guin\u00e9e \u00c9quatoriale",
+        "nameNative": "[\"Guinea Ecuatorial\"]",
+        "population": 1436000
+    },
+    {
+        "code": "bs",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "24.7736546",
+        "longitude": "-78.0000547",
+        "name": "The Bahamas",
+        "nameEs": "Las Bahamas",
+        "nameFr": "Les Bahamas",
+        "nameNative": "[\"Bahamas\"]",
+        "population": 396000
+    },
+    {
+        "code": "rw",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-1.9646631",
+        "longitude": "30.0644358",
+        "name": "Rwanda",
+        "nameEs": "Ruanda",
+        "nameFr": "Rwanda",
+        "nameNative": "[\"Rwanda\"]",
+        "population": 13337000
+    },
+    {
+        "code": "sr",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "4.1413025",
+        "longitude": "-56.0771187",
+        "name": "Suriname",
+        "nameEs": "Surinam",
+        "nameFr": "Suriname",
+        "nameNative": "[\"Suriname\"]",
+        "population": 600000
+    },
+    {
+        "code": "la",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "20.0171109",
+        "longitude": "103.378253",
+        "name": "Laos",
+        "nameEs": "Laos",
+        "nameFr": "Laos",
+        "nameNative": "[\"\u0ea5\u0eb2\u0ea7\"]",
+        "population": 7419000
+    },
+    {
+        "code": "ye",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "16.3471243",
+        "longitude": "47.8915271",
+        "name": "Yemen",
+        "nameEs": "Yemen",
+        "nameFr": "Y\u00e9men",
+        "nameNative": "[\"\u0627\u0644\u064a\u0645\u0646\"]",
+        "population": 30491000
+    },
+    {
+        "code": "nc",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-20.454288599999998",
+        "longitude": "164.55660583077983",
+        "name": "New Caledonia",
+        "nameEs": "Nueva Caledonia",
+        "nameFr": "Nouvelle Cal\u00e9donie",
+        "nameNative": "[\"Nouvelle-Cal\u00e9donie\"]",
+        "population": 290000
+    },
+    {
+        "code": "vg",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "18.4024395",
+        "longitude": "-64.5661642",
+        "name": "British Virgin Islands",
+        "nameEs": "Islas V\u00edrgenes Brit\u00e1nicas",
+        "nameFr": "\u00celes Vierges Britanniques",
+        "nameNative": "[\"British Virgin Islands\"]",
+        "population": 30000
+    },
+    {
+        "code": "mw",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-13.2687204",
+        "longitude": "33.9301963",
+        "name": "Malawi",
+        "nameEs": "Malawi",
+        "nameFr": "Malawi",
+        "nameNative": "[\"Malawi\"]",
+        "population": 19498000
+    },
+    {
+        "code": "xk",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "42.5869578",
+        "longitude": "20.9021231",
+        "name": "Kosovo",
+        "nameEs": "Kosovo",
+        "nameFr": "Kosovo",
+        "nameNative": "[\"Kosov\u00eb\"]",
+        "population": 1811000
+    },
+    {
+        "code": "gg",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "49.580437",
+        "longitude": "-2.484854",
+        "name": "Guernsey",
+        "nameEs": "Guernsey",
+        "nameFr": "Guernesey",
+        "nameNative": "[\"Guernsey\"]",
+        "population": 67000
+    },
+    {
+        "code": "gl",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "77.6192349",
+        "longitude": "-42.8125967",
+        "name": "Greenland",
+        "nameEs": "Groenlandia",
+        "nameFr": "Groenland",
+        "nameNative": "[\"Kalaallit Nunaat\"]",
+        "population": 57000
+    },
+    {
+        "code": "me",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "42.9868853",
+        "longitude": "19.5180992",
+        "name": "Montenegro",
+        "nameEs": "Montenegro",
+        "nameFr": "Mont\u00e9n\u00e9gro",
+        "nameNative": "[\"Crna Gora\",\"\u0426\u0440\u043d\u0430 \u0413\u043e\u0440\u0430\"]",
+        "population": 622000
+    },
+    {
+        "code": "bf",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "12.0753083",
+        "longitude": "-1.6880314",
+        "name": "Burkina Faso",
+        "nameEs": "Burkina Faso",
+        "nameFr": "Burkina Faso",
+        "nameNative": "[\"Burkina Faso\"]",
+        "population": 21497000
+    },
+    {
+        "code": "sh",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-15.9694573",
+        "longitude": "-5.7129442",
+        "name": "Saint Helena",
+        "nameEs": "Santa elena",
+        "nameFr": "Sainte-H\u00e9l\u00e8ne",
+        "nameNative": "[\"Saint Helena\"]",
+        "population": 6000
+    },
+    {
+        "code": "ad",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "42.5407167",
+        "longitude": "1.5732033",
+        "name": "Andorra",
+        "nameEs": "Andorra",
+        "nameFr": "Andorre",
+        "nameNative": "[\"Andorra\"]",
+        "population": 77000
+    },
+    {
+        "code": "sc",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-4.6574977",
+        "longitude": "55.4540146",
+        "name": "Seychelles",
+        "nameEs": "Seychelles",
+        "nameFr": "Seychelles",
+        "nameNative": "[\"Seychelles\"]",
+        "population": 99000
+    },
+    {
+        "code": "so",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "8.3676771",
+        "longitude": "49.083416",
+        "name": "Somalia",
+        "nameEs": "Somalia",
+        "nameFr": "Somalie",
+        "nameNative": "[\"Soomaaliya\"]",
+        "population": 16323000
+    },
+    {
+        "code": "gy",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "4.8417097",
+        "longitude": "-58.6416891",
+        "name": "Guyana",
+        "nameEs": "Guayana",
+        "nameFr": "Guyane",
+        "nameNative": "[\"Guyana\"]",
+        "population": 787000
+    },
+    {
+        "code": "pf",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-16.03442485",
+        "longitude": "-146.0490931059517",
+        "name": "French Polynesia",
+        "nameEs": "Polinesia Franc\u00e9s",
+        "nameFr": "Polyn\u00e9sie Fran\u00e7aise",
+        "nameNative": "[\"Polyn\u00e9sie fran\u00e7aise\"]",
+        "population": 282000
+    },
+    {
+        "code": "li",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "47.1416307",
+        "longitude": "9.5531527",
+        "name": "Liechtenstein",
+        "nameEs": "Liechtenstein",
+        "nameFr": "Liechtenstein",
+        "nameNative": "[\"Liechtenstein\"]",
+        "population": 38000
+    },
+    {
+        "code": "lc",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "13.8250489",
+        "longitude": "-60.975036",
+        "name": "Saint Lucia",
+        "nameEs": "Santa Luc\u00eda",
+        "nameFr": "Sainte-Lucie",
+        "nameNative": "[\"Saint Lucia\"]",
+        "population": 184000
+    },
+    {
+        "code": "tj",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "38.6281733",
+        "longitude": "70.8156541",
+        "name": "Tajikistan",
+        "nameEs": "Tayikist\u00e1n",
+        "nameFr": "Tadjikistan",
+        "nameNative": "[\"\u0422\u043e\u04b7\u0438\u043a\u0438\u0441\u0442\u043e\u043d\"]",
+        "population": 9738000
+    },
+    {
+        "code": "mo",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "22.1757605",
+        "longitude": "113.5514142",
+        "name": "Macao",
+        "nameEs": "Macao",
+        "nameFr": "Macao",
+        "nameNative": "[\"\u6fb3\u9580\",\"\u6fb3\u95e8\"]",
+        "population": 658000
+    },
+    {
+        "code": "gs",
+        "continent": {
+            "code": "an",
+            "latitude": "-79.4063075",
+            "longitude": "0.3149312",
+            "name": "Antarctica",
+            "nameEs": "Ant\u00e1rtida",
+            "nameFr": "Antarctique"
+        },
+        "latitude": "-54.8432857",
+        "longitude": "-35.8090698",
+        "name": "South Georgia and the South Sandwich Islands",
+        "nameEs": "Georgia del sur y las islas Sandwich del sur",
+        "nameFr": "G\u00e9orgie du Sud et \u00eeles Sandwich du Sud",
+        "nameNative": "[\"South Georgia and the South Sandwich Islands\"]",
+        "population": 0
+    },
+    {
+        "code": "sm",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "43.9458623",
+        "longitude": "12.458306",
+        "name": "San Marino",
+        "nameEs": "San Marino",
+        "nameFr": "Saint Marin",
+        "nameNative": "[\"San Marino\"]",
+        "population": 34000
+    },
+    {
+        "code": "bn",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "4.4137155",
+        "longitude": "114.5653908",
+        "name": "Brunei Darussalam",
+        "nameEs": "Brunei Darussalam",
+        "nameFr": "Brunei Darussalam",
+        "nameNative": "[\"Brunei\"]",
+        "population": 438000
+    },
+    {
+        "code": "bt",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "27.549511",
+        "longitude": "90.5119273",
+        "name": "Bhutan",
+        "nameEs": "But\u00e1n",
+        "nameFr": "Bhoutan",
+        "nameNative": "[\"\u0f60\u0f56\u0fb2\u0f74\u0f42\u0f0b\u0f61\u0f74\u0f63\u0f0d\"]",
+        "population": 776000
+    },
+    {
+        "code": "bj",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "9.5293472",
+        "longitude": "2.2584408",
+        "name": "Benin",
+        "nameEs": "Benin",
+        "nameFr": "B\u00e9nin",
+        "nameNative": "[\"B\u00e9nin\"]",
+        "population": 12451000
+    },
+    {
+        "code": "ls",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-29.6039267",
+        "longitude": "28.3350193",
+        "name": "Lesotho",
+        "nameEs": "Lesoto",
+        "nameFr": "Lesotho",
+        "nameNative": "[\"Lesotho\"]",
+        "population": 2160000
+    },
+    {
+        "code": "ht",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "19.1399952",
+        "longitude": "-72.3570972",
+        "name": "Haiti",
+        "nameEs": "Hait\u00ed",
+        "nameFr": "Ha\u00efti",
+        "nameNative": "[\"Ha\u00efti\"]",
+        "population": 11536000
+    },
+    {
+        "code": "tg",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "8.7800265",
+        "longitude": "1.0199765",
+        "name": "Togo",
+        "nameEs": "Togo",
+        "nameFr": "Togo",
+        "nameNative": "[\"Togo\"]",
+        "population": 8499000
+    },
+    {
+        "code": "sl",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "8.6400349",
+        "longitude": "-11.8400269",
+        "name": "Sierra Leone",
+        "nameEs": "Sierra Leona",
+        "nameFr": "Sierra Leone",
+        "nameNative": "[\"Sierra Leone\"]",
+        "population": 8134000
+    },
+    {
+        "code": "cg",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-0.7264327",
+        "longitude": "15.6419155",
+        "name": "Republic of the Congo",
+        "nameEs": "Rep\u00fablica del congo",
+        "nameFr": "R\u00e9publique du Congo",
+        "nameNative": "[\"R\u00e9publique du Congo\"]",
+        "population": 5543000
+    },
+    {
+        "code": "gn",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "10.7226226",
+        "longitude": "-10.7083587",
+        "name": "Guinea",
+        "nameEs": "Guinea",
+        "nameFr": "Guin\u00e9e",
+        "nameNative": "[\"Guin\u00e9e\"]",
+        "population": 13369000
+    },
+    {
+        "code": "lr",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "5.7499721",
+        "longitude": "-9.3658524",
+        "name": "Liberia",
+        "nameEs": "Liberia",
+        "nameFr": "Lib\u00e9ria",
+        "nameNative": "[\"Liberia\"]",
+        "population": 5184000
+    },
+    {
+        "code": "vu",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-16.5255069",
+        "longitude": "168.1069154",
+        "name": "Vanuatu",
+        "nameEs": "Vanuatu",
+        "nameFr": "Vanuatu",
+        "nameNative": "[\"Vanuatu\"]",
+        "population": 310000
+    },
+    {
+        "code": "gm",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "13.470062",
+        "longitude": "-15.4900464",
+        "name": "The Gambia",
+        "nameEs": "Gambia",
+        "nameFr": "Gambie",
+        "nameNative": "[\"Gambia\"]",
+        "population": 2451000
+    },
+    {
+        "code": "tm",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "39.3763807",
+        "longitude": "59.3924609",
+        "name": "Turkmenistan",
+        "nameEs": "Turkmenist\u00e1n",
+        "nameFr": "Turkm\u00e9nistan",
+        "nameNative": "[\"T\u00fcrkmenistan\"]",
+        "population": 6066000
+    },
+    {
+        "code": "ck",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-16.0492781",
+        "longitude": "-160.3554851",
+        "name": "Cook Islands",
+        "nameEs": "Islas Cook",
+        "nameFr": "\u00celes Cook",
+        "nameNative": "[\"K\u016bki '\u0100irani\"]",
+        "population": 18000
+    },
+    {
+        "code": "bi",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-3.3634357",
+        "longitude": "29.8870575",
+        "name": "Burundi",
+        "nameEs": "Burundi",
+        "nameFr": "Burundi",
+        "nameNative": "[\"Burundi\"]",
+        "population": 12155000
+    },
+    {
+        "code": "cv",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "16.0000552",
+        "longitude": "-24.0083947",
+        "name": "Cape Verde",
+        "nameEs": "Cabo Verde",
+        "nameFr": "Cap-Vert",
+        "nameNative": "[\"Cabo Verde\"]",
+        "population": 556000
+    },
+    {
+        "code": "ax",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "60.1603621",
+        "longitude": "20.08317860965865",
+        "name": "Aland Islands",
+        "nameEs": "Islas Aland",
+        "nameFr": "Iles Aland",
+        "nameNative": "[\"\u00c5land\"]",
+        "population": 30000
+    },
+    {
+        "code": "gd",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "12.1360374",
+        "longitude": "-61.6904045",
+        "name": "Grenada",
+        "nameEs": "Granada",
+        "nameFr": "Grenade",
+        "nameNative": "[\"Grenada\"]",
+        "population": 113000
+    },
+    {
+        "code": "ag",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "17.2234721",
+        "longitude": "-61.9554608",
+        "name": "Antigua and Barbuda",
+        "nameEs": "Antigua y Barbuda",
+        "nameFr": "Antigua-et-Barbuda",
+        "nameNative": "[\"Antigua and Barbuda\"]",
+        "population": 98000
+    },
+    {
+        "code": "td",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "15.6134137",
+        "longitude": "19.0156172",
+        "name": "Chad",
+        "nameEs": "Chad",
+        "nameFr": "Tchad",
+        "nameNative": "[\"Tchad\"]",
+        "population": 16923000
+    },
+    {
+        "code": "sb",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-8.7053941",
+        "longitude": "159.10710973724628",
+        "name": "Solomon Islands",
+        "nameEs": "Islas Salom\u00f3n",
+        "nameFr": "\u00celes Salomon",
+        "nameNative": "[\"Solomon Islands\"]",
+        "population": 708000
+    },
+    {
+        "code": "tl",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "-8.5151979",
+        "longitude": "125.8375756",
+        "name": "Timor-Leste",
+        "nameEs": "Timor-Leste",
+        "nameFr": "Timor-Leste",
+        "nameNative": "[\"Timor-Leste\"]",
+        "population": 1338000
+    },
+    {
+        "code": "pr",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "18.2214149",
+        "longitude": "-66.41328179513847",
+        "name": "Puerto Rico",
+        "nameEs": "Puerto Rico",
+        "nameFr": "Porto Rico",
+        "nameNative": "[\"Puerto Rico\"]",
+        "population": 3194000
+    },
+    {
+        "code": "pm",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "46.783246899999995",
+        "longitude": "-56.195158907484085",
+        "name": "Saint Pierre and Miquelon",
+        "nameEs": "San Pedro y Miquel\u00f3n",
+        "nameFr": "Saint-Pierre-et-Miquelon",
+        "nameNative": "[\"Saint-Pierre-et-Miquelon\"]",
+        "population": 6000
+    },
+    {
+        "code": "ss",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "7.8699431",
+        "longitude": "29.6667897",
+        "name": "South Sudan",
+        "nameEs": "Sud\u00e1n del Sur",
+        "nameFr": "Soudan du sud",
+        "nameNative": "[\"South Sudan\"]",
+        "population": 11196000
+    },
+    {
+        "code": "sz",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-26.5624806",
+        "longitude": "31.3991317",
+        "name": "Eswatini",
+        "nameEs": "Suazilandia",
+        "nameFr": "Eswatini",
+        "nameNative": "[\"Swaziland\"]",
+        "population": 1168000
+    },
+    {
+        "code": "tc",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "21.7214683",
+        "longitude": "-71.6201783",
+        "name": "Turks and Caicos Islands",
+        "nameEs": "Islas Turcas y Caicos",
+        "nameFr": "\u00eeles Turques-et-Ca\u00efques",
+        "nameNative": "[\"Turks and Caicos Islands\"]",
+        "population": 38000
+    },
+    {
+        "code": "aw",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "12.4902998",
+        "longitude": "-69.9609842",
+        "name": "Aruba",
+        "nameEs": "Aruba",
+        "nameFr": "Aruba",
+        "nameNative": "[\"Aruba\"]",
+        "population": 107000
+    },
+    {
+        "code": "va",
+        "continent": {
+            "code": "eu",
+            "latitude": "51",
+            "longitude": "10",
+            "name": "Europe",
+            "nameEs": "Europa",
+            "nameFr": "Europe"
+        },
+        "latitude": "41.9034912",
+        "longitude": "12.4528349",
+        "name": "Vatican City",
+        "nameEs": "Ciudad del Vaticano",
+        "nameFr": "Vatican",
+        "nameNative": "[\"Citt\u00e0 del Vaticano\"]",
+        "population": 800
+    },
+    {
+        "code": "kn",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "17.250512",
+        "longitude": "-62.6725973",
+        "name": "Saint Kitts and Nevis",
+        "nameEs": "Saint Kitts y Nevis",
+        "nameFr": "Saint-Christophe-et-Ni\u00e9v\u00e8s",
+        "nameNative": "[\"Saint Kitts and Nevis\"]",
+        "population": 53000
+    },
+    {
+        "code": "dm",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "19.0974031",
+        "longitude": "-70.3028026",
+        "name": "Dominica",
+        "nameEs": "Dominica",
+        "nameFr": "Dominique",
+        "nameNative": "[\"Dominica\"]",
+        "population": 72000
+    },
+    {
+        "code": "vc",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "12.90447",
+        "longitude": "-61.2765569",
+        "name": "Saint Vincent and the Grenadines",
+        "nameEs": "San Vicente y las Granadinas",
+        "nameFr": "Saint-Vincent-et-les-Grenadines",
+        "nameNative": "[\"Saint Vincent and the Grenadines\"]",
+        "population": 111000
+    },
+    {
+        "code": "ws",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-13.7693895",
+        "longitude": "-172.1200508",
+        "name": "Samoa",
+        "nameEs": "Samoa",
+        "nameFr": "Samoa",
+        "nameNative": "[\"Samoa\"]",
+        "population": 199000
+    },
+    {
+        "code": "tf",
+        "continent": {
+            "code": "an",
+            "latitude": "-79.4063075",
+            "longitude": "0.3149312",
+            "name": "Antarctica",
+            "nameEs": "Ant\u00e1rtida",
+            "nameFr": "Antarctique"
+        },
+        "latitude": "-49.237441950000004",
+        "longitude": "69.62275903679347",
+        "name": "French Southern and Antarctic Lands",
+        "nameEs": "Tierras Australes y Ant\u00e1rticas Francesas",
+        "nameFr": "Terres Australes et Antarctiques Fran\u00e7aises",
+        "nameNative": "[\"Terres australes et antarctiques fran\u00e7aises\"]",
+        "population": 140
+    },
+    {
+        "code": "fk",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "-51.9666424",
+        "longitude": "-59.5500387",
+        "name": "Falkland Islands",
+        "nameEs": "Islas Malvinas",
+        "nameFr": "\u00celes Falkland",
+        "nameNative": "[\"Islas Malvinas\"]",
+        "population": 3000
+    },
+    {
+        "code": "vi",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "17.789187",
+        "longitude": "-64.7080574",
+        "name": "United States Virgin Islands",
+        "nameEs": "Islas V\u00edrgenes de los Estados Unidos",
+        "nameFr": "\u00celes Vierges Am\u00e9ricaines",
+        "nameNative": "[\"United States Virgin Islands\"]",
+        "population": 104000
+    },
+    {
+        "code": "mr",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "20.2540382",
+        "longitude": "-9.2399263",
+        "name": "Mauritania",
+        "nameEs": "Mauritania",
+        "nameFr": "Mauritanie",
+        "nameNative": "[\"\u0645\u0648\u0631\u064a\u062a\u0627\u0646\u064a\u0627\"]",
+        "population": 4732000
+    },
+    {
+        "code": "sx",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "18.0423736",
+        "longitude": "-63.0549948",
+        "name": "Saint Martin (Dutch part)",
+        "nameEs": "San Mart\u00edn (Parte Holandesa)",
+        "nameFr": "Saint Martin (Partie N\u00e9erlandaise)",
+        "nameNative": "[\"Sint Maarten\"]",
+        "population": 41000
+    },
+    {
+        "code": "mp",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "14.149020499999999",
+        "longitude": "145.21345248318923",
+        "name": "Northern Mariana Islands",
+        "nameEs": "Islas Marianas del Norte",
+        "nameFr": "\u00celes Mariannes du Nord",
+        "nameNative": "[\"Sankattan Siha Na Islas Mari\u00e5nas\"]",
+        "population": 56000
+    },
+    {
+        "code": "gp",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "16.2490067",
+        "longitude": "-61.5650444",
+        "name": "Guadeloupe",
+        "nameEs": "Guadalupe",
+        "nameFr": "Guadeloupe",
+        "nameNative": "[\"Guadeloupe\"]",
+        "population": 400000
+    },
+    {
+        "code": "dj",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "11.8145966",
+        "longitude": "42.8453061",
+        "name": "Djibouti",
+        "nameEs": "Djibouti",
+        "nameFr": "Djibouti",
+        "nameNative": "[\"Djibouti\",\"\u062c\u064a\u0628\u0648\u062a\u064a\"]",
+        "population": 993000
+    },
+    {
+        "code": "cw",
+        "continent": {
+            "code": "sa",
+            "latitude": "-21.0002179",
+            "longitude": "-61.0006565",
+            "name": "South America",
+            "nameEs": "Sudamerica",
+            "nameFr": "Am\u00e9rique du Sud"
+        },
+        "latitude": "12.1845",
+        "longitude": "-68.9640875031406",
+        "name": "Cura\u00e7ao",
+        "nameEs": "Curazao",
+        "nameFr": "Curacao",
+        "nameNative": "[\"Cura\u00e7ao\"]",
+        "population": 164000
+    },
+    {
+        "code": "mh",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "6.9518742",
+        "longitude": "170.9985095",
+        "name": "Marshall Islands",
+        "nameEs": "Islas Marshall",
+        "nameFr": "Iles Marshall",
+        "nameNative": "[\"M\u0327aje\u013c\"]",
+        "population": 59000
+    },
+    {
+        "code": "to",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-19.9160819",
+        "longitude": "-175.2026424",
+        "name": "Tonga",
+        "nameEs": "Tonga",
+        "nameFr": "Tonga",
+        "nameNative": "[\"Tonga\"]",
+        "population": 100000
+    },
+    {
+        "code": "ki",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "0.306",
+        "longitude": "173.664834025",
+        "name": "Kiribati",
+        "nameEs": "Kiribati",
+        "nameFr": "Kiribati",
+        "nameNative": "[\"Kiribati\"]",
+        "population": 119000
+    },
+    {
+        "code": "nf",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-29.0289575",
+        "longitude": "167.9587289126371",
+        "name": "Norfolk Island",
+        "nameEs": "Isla Norfolk",
+        "nameFr": "\u00cele de Norfolk",
+        "nameNative": "[\"Norfolk Island\"]",
+        "population": 2000
+    },
+    {
+        "code": "mq",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "14.6367927",
+        "longitude": "-61.01582685063731",
+        "name": "Martinique",
+        "nameEs": "Martinica",
+        "nameFr": "Martinique",
+        "nameNative": "[\"Martinique\"]",
+        "population": 374000
+    },
+    {
+        "code": "ai",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "18.1954947",
+        "longitude": "-63.0750234",
+        "name": "Anguilla",
+        "nameEs": "Anguila",
+        "nameFr": "Anguilla",
+        "nameNative": "[\"Anguilla\"]",
+        "population": 15000
+    },
+    {
+        "code": "km",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "-12.2045176",
+        "longitude": "44.2832964",
+        "name": "Comoros",
+        "nameEs": "Comoras",
+        "nameFr": "Comores",
+        "nameNative": "[\"Comores\",\"\u062c\u0632\u0631 \u0627\u0644\u0642\u0645\u0631\"]",
+        "population": 888000
+    },
+    {
+        "code": "wf",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-14.30190495",
+        "longitude": "-178.08997342208266",
+        "name": "Wallis and Futuna",
+        "nameEs": "Wallis y Futuna",
+        "nameFr": "Wallis et Futuna",
+        "nameNative": "[\"Wallis and Futuna\"]",
+        "population": 11000
+    },
+    {
+        "code": "nr",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-0.5252306",
+        "longitude": "166.9324426",
+        "name": "Nauru",
+        "nameEs": "Nauru",
+        "nameFr": "Nauru",
+        "nameNative": "[\"Nauru\"]",
+        "population": 11000
+    },
+    {
+        "code": "fm",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "7",
+        "longitude": "155.25",
+        "name": "Federated States of Micronesia",
+        "nameEs": "Estados Federados de Micronesia",
+        "nameFr": "\u00c9tats f\u00e9d\u00e9r\u00e9s de Micron\u00e9sie",
+        "nameNative": "[\"Micronesia\"]",
+        "population": 104000
+    },
+    {
+        "code": "gw",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "12.100035",
+        "longitude": "-14.9000214",
+        "name": "Guinea-Bissau",
+        "nameEs": "Guinea-Bis\u00e1u",
+        "nameFr": "Guin\u00e9e-Bissau",
+        "nameNative": "[\"Guin\u00e9-Bissau\"]",
+        "population": 2015000
+    },
+    {
+        "code": "kp",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "40.3736611",
+        "longitude": "127.0870417",
+        "name": "North Korea",
+        "nameEs": "Corea del Norte",
+        "nameFr": "Cor\u00e9e du Nord",
+        "nameNative": "[\"\uc870\uc120\"]",
+        "population": 25827000
+    },
+    {
+        "code": "pn",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-25.0657719",
+        "longitude": "-130.1017823",
+        "name": "Pitcairn Islands",
+        "nameEs": "Islas Pitcairn",
+        "nameFr": "\u00celes Pitcairn",
+        "nameNative": "[\"Pitcairn Islands\"]",
+        "population": 50
+    },
+    {
+        "code": "er",
+        "continent": {
+            "code": "af",
+            "latitude": "11.5024338",
+            "longitude": "17.7578122",
+            "name": "Africa",
+            "nameEs": "\u00c1frica",
+            "nameFr": "Afrique"
+        },
+        "latitude": "15.9500319",
+        "longitude": "37.9999668",
+        "name": "Eritrea",
+        "nameEs": "Eritrea",
+        "nameFr": "\u00c9rythr\u00e9e",
+        "nameNative": "[\"\u12a4\u122d\u1275\u122b\"]",
+        "population": 3628000
+    },
+    {
+        "code": "io",
+        "continent": {
+            "code": "as",
+            "latitude": "51.2086975",
+            "longitude": "89.2343748",
+            "name": "Asia",
+            "nameEs": "Asia",
+            "nameFr": "Asie"
+        },
+        "latitude": "-6.4157192",
+        "longitude": "72.1173961",
+        "name": "British Indian Ocean Territory",
+        "nameEs": "Territorio Brit\u00e1nico del Oc\u00e9ano \u00cdndico",
+        "nameFr": "Territoire britannique de l'oc\u00e9an Indien",
+        "nameNative": "[\"British Indian Ocean Territory\"]",
+        "population": 3000
+    },
+    {
+        "code": "ms",
+        "continent": {
+            "code": "na",
+            "latitude": "51.0000002",
+            "longitude": "-109",
+            "name": "North America",
+            "nameEs": "Am\u00e9rica del Norte",
+            "nameFr": "Am\u00e9rique du Nord"
+        },
+        "latitude": "16.7417041",
+        "longitude": "-62.1916844",
+        "name": "Montserrat",
+        "nameEs": "Montserrat",
+        "nameFr": "Montserrat",
+        "nameNative": "[\"Montserrat\"]",
+        "population": 5000
+    },
+    {
+        "code": "tv",
+        "continent": {
+            "code": "oc",
+            "latitude": "-18.3128",
+            "longitude": "138.5156",
+            "name": "Oceania",
+            "nameEs": "Ocean\u00eda",
+            "nameFr": "Oc\u00e9anie"
+        },
+        "latitude": "-8.6405212",
+        "longitude": "179.1582918181797",
+        "name": "Tuvalu",
+        "nameEs": "Tuvalu",
+        "nameFr": "Tuvalu",
+        "nameNative": "[\"Tuvalu\"]",
+        "population": 11000
+    }
+]
