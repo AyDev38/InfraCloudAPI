@@ -1,6 +1,6 @@
 document.getElementById('getAllCountries').addEventListener('click', async () => {
     try {
-        const response = await axios.get('http://0.0.0.0:8000/countries');
+        const response = await axios.get('http://localhost:8000/countries');
         const countries = response.data;
         const resultContainer = document.getElementById('allCountriesResult');
         resultContainer.innerHTML = '';
@@ -42,7 +42,7 @@ document.getElementById('getAllCountries').addEventListener('click', async () =>
 document.getElementById('getCountryByCode').addEventListener('click', async () => {
     const countryCode = document.getElementById('countryCode').value;
     try {
-        const response = await axios.get(`http://0.0.0.0:8000/countries/${countryCode}`);
+        const response = await axios.get(`http://localhost:8000/countries/${countryCode}`);
         const country = response.data;
         const resultContainer = document.getElementById('countryByCodeResult');
 
@@ -87,11 +87,11 @@ document.getElementById('createCountryForm').addEventListener('submit', async (e
         nameEs: document.getElementById('newCountryNameEs').value,
         nameFr: document.getElementById('newCountryNameFr').value,
         nameNative: document.getElementById('newCountryNameNative').value,
-        population: document.getElementById('newCountryPopulation').value
+        population: parseInt(document.getElementById('newCountryPopulation').value),
     };
 
     try {
-        const response = await axios.post('http://0.0.0.0:8000/countries', newCountry);
+        const response = await axios.post('http://localhost:8000/countries', newCountry);
         const resultContainer = document.getElementById('createCountryResult');
         resultContainer.innerHTML = `Country created: ${response.data.name}`;
     } catch (error) {
