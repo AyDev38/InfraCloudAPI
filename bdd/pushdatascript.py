@@ -47,14 +47,20 @@ for country in countries_data:
     if continent["code"] not in continent_codes:
         continent_codes.add(continent["code"])
         cursor.execute(
-            "INSERT INTO continents (code, latitude, longitude, name, nameEs, nameFr) VALUES (?, ?, ?, ?, ?, ?)",
+            '''
+            INSERT INTO continents (code, latitude, longitude, name, nameEs, nameFr)
+            VALUES (?, ?, ?, ?, ?, ?)
+            ''',
             (continent["code"], continent["latitude"], continent["longitude"], continent["name"], continent["nameEs"], continent["nameFr"])
         )
 
 # Insérer les données dans la table countries
 for country in countries_data:
     cursor.execute(
-        "INSERT INTO countries (code, continent_code, latitude, longitude, name, nameEs, nameFr, nameNative, population) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        '''
+        INSERT INTO countries (code, continent_code, latitude, longitude, name, nameEs, nameFr, nameNative, population)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''',
         (country["code"], country["continent"]["code"], country["latitude"], country["longitude"], country["name"], country["nameEs"], country["nameFr"], json.dumps(country["nameNative"]), country["population"])
     )
 
