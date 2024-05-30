@@ -29,9 +29,11 @@ async function getCountries() {
         const endIndex = startIndex + itemsPerPage;
         const countriesToDisplay = countries.slice(startIndex, endIndex);
 
-        countriesToDisplay.forEach(country => {
+        countriesToDisplay.forEach(async (country) => {
 
             const continentCode = country.continent_code || 'N/A';
+            var continent = await axios.get(`http://localhost:8000/continents/${continentCode}`)
+            var continentName = continent.data.name;
             const population = country.population || 'N/A';
             const latitude = country.latitude || 'N/A';
             const longitude = country.longitude || 'N/A';
@@ -46,7 +48,7 @@ async function getCountries() {
                             height="144"
                             alt="Flag of ${country.name}"></h5>
                             <p class="card-text">
-                                <strong>Continent:</strong> ${continentCode}<br>
+                                <strong>Continent:</strong> ${continentName}<br>
                                 <strong>Population:</strong> ${population}<br>
                                 <strong>Latitude:</strong> ${latitude}<br>
                                 <strong>Longitude:</strong> ${longitude}
@@ -172,6 +174,8 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         const resultContainer = document.getElementById('countryByCodeResult');
 
         const continentCode = country.continent_code || 'N/A';
+        var continent = await axios.get(`http://localhost:8000/continents/${continentCode}`)
+        var continentName = continent.data.name;
         const population = country.population || 'N/A';
         const latitude = country.latitude || 'N/A';
         const longitude = country.longitude || 'N/A';
@@ -187,7 +191,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        <strong>Continent:</strong> ${continentCode}<br>
+                        <strong>Continent:</strong> ${continentName}<br>
                         <strong>Population:</strong> ${population}<br>
                         <strong>Latitude:</strong> ${latitude}<br>
                         <strong>Longitude:</strong> ${longitude}
