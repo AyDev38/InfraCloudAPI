@@ -1,15 +1,11 @@
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
-import json
-from pathlib import Path
+from typing import List, Optional
+import sqlite3
 
 # Crée une instance de l'application FastAPI
 app = FastAPI()
-
-# Chemin vers le fichier JSON
-DATA_FILE = Path("countries_data.json")
 
 # Configuration de CORS
 origins = [
@@ -37,7 +33,7 @@ class Continent(BaseModel):
 
 class Country(BaseModel):
     code: str
-    continent: Continent
+    continent_code: str
     latitude: str
     longitude: str
     name: str
@@ -46,124 +42,109 @@ class Country(BaseModel):
     nameNative: str
     population: int
 
-# Initialiser le fichier JSON si vide ou inexistant
-def initialize_data_file():
-    if not DATA_FILE.exists() or DATA_FILE.stat().st_size == 0:
-        with open(DATA_FILE, "w", encoding="utf-8") as file:
-            json.dump([], file)
-
-# Fonction pour charger les données du fichier JSON
-def load_data() -> List[Country]:
-    initialize_data_file()
-    with open(DATA_FILE, "r", encoding="utf-8") as file:
-        countries_raw = json.load(file)
-        return [Country(**country) for country in countries_raw]
-
-# Fonction pour sauvegarder les données dans le fichier JSON
-def save_data(countries: List[Country]):
-    with open(DATA_FILE, "w", encoding="utf-8") as file:
-        json.dump([country.dict() for country in countries], file, ensure_ascii=False, indent=4)
-
-# Charger les données initiales
-countries_db: List[Country] = load_data()
+# Fonction pour obtenir une connexion à la base de données
+def get_db_connection():
+    connection = sqlite3.connect('../bdd/countries.db')
+    connection.row_factory = sqlite3.Row
+    return connection
 
 # Route pour lire tous les pays
 @app.get("/countries", response_model=List[Country])
 def read_countries():
-    return countries_db
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM countries")
+    countries = cursor.fetchall()
+    connection.close()
+    return [Country(**dict(country)) for country in countries]
 
 # Route pour lire un pays par code
 @app.get("/countries/{code}", response_model=Country)
 def read_country(code: str):
-    country = next((c for c in countries_db if c.code == code), None)
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM countries WHERE code = ?", (code,))
+    country = cursor.fetchone()
+    connection.close()
     if country is None:
         raise HTTPException(status_code=404, detail="Country not found")
-    return country
+    return Country(**dict(country))
 
 # Route pour créer un nouveau pays
 @app.post("/countries", response_model=Country)
 def create_country(country: Country):
-    new_country = Country(
-        code=country.code,
-        continent=country.continent,
-        latitude=country.latitude,
-        longitude=country.longitude,
-        name=country.name,
-        nameEs=country.nameEs,
-        nameFr=country.nameFr,
-        nameNative=country.nameNative,
-        population=country.population
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute(
+        "INSERT INTO countries (code, continent_code, latitude, longitude, name, nameEs, nameFr, nameNative, population) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (country.code, country.continent_code, country.latitude, country.longitude, country.name, country.nameEs, country.nameFr, country.nameNative, country.population)
     )
-    countries_db.append(new_country)
-    save_data(countries_db)
-    return new_country
+    connection.commit()
+    connection.close()
+    return country
 
 # Route pour mettre à jour un pays
 @app.put("/countries/{code}", response_model=Country)
 def update_country(code: str, country_update: Country):
-    existing_country = next((c for c in countries_db if c.code == code), None)
-    if existing_country is None:
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute(
+        "UPDATE countries SET code = ?, continent_code = ?, latitude = ?, longitude = ?, name = ?, nameEs = ?, nameFr = ?, nameNative = ?, population = ? WHERE code = ?",
+        (country_update.code, country_update.continent_code, country_update.latitude, country_update.longitude, country_update.name, country_update.nameEs, country_update.nameFr, country_update.nameNative, country_update.population, code)
+    )
+    connection.commit()
+    connection.close()
+    if cursor.rowcount == 0:
         raise HTTPException(status_code=404, detail="Country not found")
-    
-    # Vérifiez si le nouveau code existe déjà dans la base de données
-    if code != country_update.code and any(c for c in countries_db if c.code == country_update.code):
-        raise HTTPException(status_code=400, detail="New country code already exists")
-    
-    existing_country.code = country_update.code
-    existing_country.continent = country_update.continent
-    existing_country.latitude = country_update.latitude
-    existing_country.longitude = country_update.longitude
-    existing_country.name = country_update.name
-    existing_country.nameEs = country_update.nameEs
-    existing_country.nameFr = country_update.nameFr
-    existing_country.nameNative = country_update.nameNative
-    existing_country.population = country_update.population
-    
-    save_data(countries_db)
-    return existing_country
+    return country_update
 
 # Route pour supprimer un pays
 @app.delete("/countries/{code}", response_model=Country)
 def delete_country(code: str):
-    global countries_db
-    country = next((c for c in countries_db if c.code == code), None)
-    if country is None:
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("DELETE FROM countries WHERE code = ?", (code,))
+    connection.commit()
+    if cursor.rowcount == 0:
         raise HTTPException(status_code=404, detail="Country not found")
-    countries_db = [c for c in countries_db if c.code != code]
-    save_data(countries_db)
-    return country
+    connection.close()
+    return {"detail": "Country deleted"}
 
 # Route pour rechercher des pays par nom
 @app.get("/countries/search/by-name", response_model=List[Country])
 def search_countries_by_name(name: str):
-    results = [country for country in countries_db if name.lower() in country.name.lower()]
-    if not results:
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM countries WHERE name LIKE ?", ('%' + name + '%',))
+    countries = cursor.fetchall()
+    connection.close()
+    if not countries:
         raise HTTPException(status_code=404, detail="No countries found with the given name")
-    return results
+    return [Country(**dict(country)) for country in countries]
 
 # Route pour rechercher des pays par code de continent
 @app.get("/countries/search/by-continent-code", response_model=List[Country])
 def search_countries_by_continent_code(continent_code: str):
-    results = [country for country in countries_db if country.continent.code == continent_code]
-    if not results:
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM countries WHERE continent_code = ?", (continent_code,))
+    countries = cursor.fetchall()
+    connection.close()
+    if not countries:
         raise HTTPException(status_code=404, detail="No countries found in the given continent")
-    return results
-
-# Route pour rechercher des pays par nom de continent
-@app.get("/countries/search/by-continent-name", response_model=List[Country])
-def search_countries_by_continent_name(continent_name: str):
-    results = [country for country in countries_db if country.continent.name.lower() == continent_name.lower()]
-    if not results:
-        raise HTTPException(status_code=404, detail="No countries found in the given continent")
-    return results
+    return [Country(**dict(country)) for country in countries]
 
 # Route pour rechercher des pays par population supérieure à un chiffre donné
 @app.get("/countries/search/by-population", response_model=List[Country])
 def search_countries_by_population(min_population: int = Query(..., alias="minPopulation")):
-    results = [country for country in countries_db if country.population > min_population]
-    if not results:
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("SELECT * FROM countries WHERE population > ?", (min_population,))
+    countries = cursor.fetchall()
+    connection.close()
+    if not countries:
         raise HTTPException(status_code=404, detail="No countries found with population greater than the given number")
-    return results
+    return [Country(**dict(country)) for country in countries]
 
 # Définition d'une route GET de base avec les différentes commandes de l'API
 @app.get("/")
@@ -178,7 +159,6 @@ def read_root():
             "DELETE /countries/{code}": "Delete a country by code",
             "GET /countries/search/by-name": "Search countries by name (query param: name)",
             "GET /countries/search/by-continent-code": "Search countries by continent code (query param: continent_code)",
-            "GET /countries/search/by-continent-name": "Search countries by continent name (query param: continent_name)",
             "GET /countries/search/by-population": "Search countries by population greater than a given number (query param: minPopulation)"
         }
     }
