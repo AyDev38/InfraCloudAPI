@@ -7,7 +7,7 @@ document.getElementById('getAllCountries').addEventListener('click', async () =>
 
         countries.forEach(country => {
 
-            const continentName = country.continent?.name || 'N/A';
+            const continentCode = country.continent_code || 'N/A';
             const population = country.population || 'N/A';
             const latitude = country.latitude || 'N/A';
             const longitude = country.longitude || 'N/A';
@@ -22,7 +22,7 @@ document.getElementById('getAllCountries').addEventListener('click', async () =>
                             height="144"
                             alt="Flag of ${country.name}"></h5>
                             <p class="card-text">
-                                <strong>Continent:</strong> ${continentName}<br>
+                                <strong>Continent:</strong> ${continentCode}<br>
                                 <strong>Population:</strong> ${population}<br>
                                 <strong>Latitude:</strong> ${latitude}<br>
                                 <strong>Longitude:</strong> ${longitude}
@@ -46,7 +46,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         const country = response.data;
         const resultContainer = document.getElementById('countryByCodeResult');
 
-        const continentName = country.continent?.name || 'N/A';
+        const continentCode = country.continent_code || 'N/A';
         const population = country.population || 'N/A';
         const latitude = country.latitude || 'N/A';
         const longitude = country.longitude || 'N/A';
@@ -62,7 +62,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        <strong>Continent:</strong> ${continentName}<br>
+                        <strong>Continent:</strong> ${continentCode}<br>
                         <strong>Population:</strong> ${population}<br>
                         <strong>Latitude:</strong> ${latitude}<br>
                         <strong>Longitude:</strong> ${longitude}
