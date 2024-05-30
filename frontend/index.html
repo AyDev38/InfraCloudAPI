@@ -4,42 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries API</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<body>
-    <h1>Countries API Frontend</h1>
+<body class="container">
+    <h1 class="my-4">Countries API Frontend</h1>
     
     <div>
         <h2>Get All Countries</h2>
-        <button id="getAllCountries">Get All Countries</button>
-        <pre id="allCountriesResult"></pre>
+        <button id="getAllCountries" class="btn btn-primary mb-3">Get All Countries</button>
+        <div id="allCountriesResult" class="row"></div>
     </div>
     
-    <div>
+    <div class="my-4">
         <h2>Get Country by Code</h2>
-        <input type="text" id="countryCode" placeholder="Enter country code">
-        <button id="getCountryByCode">Get Country</button>
-        <pre id="countryByCodeResult"></pre>
+        <input type="text" id="countryCode" class="form-control mb-2" placeholder="Enter country code">
+        <button id="getCountryByCode" class="btn btn-primary">Get Country</button>
+        <pre id="countryByCodeResult" class="mt-2"></pre>
     </div>
     
-    <div>
+    <div class="my-4">
         <h2>Create New Country</h2>
         <form id="createCountryForm">
-            <input type="text" id="newCountryCode" placeholder="Code" required>
-            <input type="text" id="newCountryName" placeholder="Name" required>
-            <input type="text" id="newCountryContinentCode" placeholder="Continent Code" required>
-            <input type="text" id="newCountryLatitude" placeholder="Latitude" required>
-            <input type="text" id="newCountryLongitude" placeholder="Longitude" required>
-            <input type="text" id="newCountryNameEs" placeholder="Name (ES)" required>
-            <input type="text" id="newCountryNameFr" placeholder="Name (FR)" required>
-            <input type="text" id="newCountryNameNative" placeholder="Native Name" required>
-            <input type="number" id="newCountryPopulation" placeholder="Population" required>
-            <button type="submit">Create Country</button>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryCode" class="form-control" placeholder="Code" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryName" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryContinentCode" class="form-control" placeholder="Continent Code" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryLatitude" class="form-control" placeholder="Latitude" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryLongitude" class="form-control" placeholder="Longitude" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryNameEs" class="form-control" placeholder="Name (ES)" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryNameFr" class="form-control" placeholder="Name (FR)" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" id="newCountryNameNative" class="form-control" placeholder="Native Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="number" id="newCountryPopulation" class="form-control" placeholder="Population" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Create Country</button>
         </form>
-        <pre id="createCountryResult"></pre>
+        <pre id="createCountryResult" class="mt-2"></pre>
     </div>
 
     <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
