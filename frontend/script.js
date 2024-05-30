@@ -1,14 +1,25 @@
+import axios from 'axios';
+
 document.getElementById('getAllCountries').addEventListener('click', async () => {
-    const response = await fetch('http://localhost:8000/countries');
-    const data = await response.json();
-    document.getElementById('allCountriesResult').textContent = JSON.stringify(data, null, 2);
+    try {
+        const response = await axios.get('http://localhost:8000/countries');
+        const data = response.data;
+        console.log(data);
+        document.getElementById('allCountriesResult').textContent = JSON.stringify(data, null, 2);
+    } catch (error) {
+        console.error(error);
+    }
 });
 
 document.getElementById('getCountryByCode').addEventListener('click', async () => {
     const code = document.getElementById('countryCode').value;
-    const response = await fetch(`http://localhost:8000/countries/${code}`);
-    const data = await response.json();
-    document.getElementById('countryByCodeResult').textContent = JSON.stringify(data, null, 2);
+    try {
+        const response = await axios.get(`http://localhost:8000/countries/${code}`);
+        const data = response.data;
+        document.getElementById('countryByCodeResult').textContent = JSON.stringify(data, null, 2);
+    } catch (error) {
+        console.error(error);
+    }
 });
 
 document.getElementById('createCountryForm').addEventListener('submit', async (e) => {
@@ -31,13 +42,15 @@ document.getElementById('createCountryForm').addEventListener('submit', async (e
         nameNative: document.getElementById('newCountryNameNative').value,
         population: document.getElementById('newCountryPopulation').value
     };
-    const response = await fetch('http://localhost:8000/countries', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newCountry)
-    });
-    const data = await response.json();
-    document.getElementById('createCountryResult').textContent = JSON.stringify(data, null, 2);
+    try {
+        const response = await axios.post('http://localhost:8000/countries', newCountry, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        const data = response.data;
+        document.getElementById('createCountryResult').textContent = JSON.stringify(data, null, 2);
+    } catch (error) {
+        console.error(error);
+    }
 });
