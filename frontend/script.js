@@ -1,8 +1,9 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 document.getElementById('getAllCountries').addEventListener('click', async () => {
     try {
         const response = await axios.get('http://localhost:8000/countries');
+        console.log(response)
         const data = response.data;
         console.log(data);
         document.getElementById('allCountriesResult').textContent = JSON.stringify(data, null, 2);

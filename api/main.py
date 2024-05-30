@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 import json
 from pathlib import Path
 
@@ -9,6 +10,21 @@ app = FastAPI()
 
 # Chemin vers le fichier JSON
 DATA_FILE = Path("countries_data.json")
+
+# Configuration de CORS
+origins = [
+    "http://localhost:3000",  # Remplacez par les origines que vous souhaitez autoriser
+    "http://127.0.0.1:3000",
+    # Ajoutez d'autres origines si nécessaire
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],  # Autoriser toutes les méthodes HTTP (GET, POST, etc.)
+    allow_headers=["*"],  # Autoriser tous les en-têtes
+)
 
 # Modèles de données
 class Continent(BaseModel):
