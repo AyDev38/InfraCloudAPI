@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Countries API Frontend</h1>
+    
+    <div>
+        <h2>Get All Countries</h2>
+        <button id="getAllCountries">Get All Countries</button>
+        <pre id="allCountriesResult"></pre>
+    </div>
+    
+    <div>
+        <h2>Get Country by Code</h2>
+        <input type="text" id="countryCode" placeholder="Enter country code">
+        <button id="getCountryByCode">Get Country</button>
+        <pre id="countryByCodeResult"></pre>
+    </div>
+    
+    <div>
+        <h2>Create New Country</h2>
+        <form id="createCountryForm">
+            <input type="text" id="newCountryCode" placeholder="Code" required>
+            <input type="text" id="newCountryName" placeholder="Name" required>
+            <input type="text" id="newCountryContinentCode" placeholder="Continent Code" required>
+            <input type="text" id="newCountryLatitude" placeholder="Latitude" required>
+            <input type="text" id="newCountryLongitude" placeholder="Longitude" required>
+            <input type="text" id="newCountryNameEs" placeholder="Name (ES)" required>
+            <input type="text" id="newCountryNameFr" placeholder="Name (FR)" required>
+            <input type="text" id="newCountryNameNative" placeholder="Native Name" required>
+            <input type="number" id="newCountryPopulation" placeholder="Population" required>
+            <button type="submit">Create Country</button>
+        </form>
+        <pre id="createCountryResult"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
