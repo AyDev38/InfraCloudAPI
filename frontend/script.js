@@ -25,24 +25,19 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
 
 document.getElementById('createCountryForm').addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const newCountry = {
         code: document.getElementById('newCountryCode').value,
-        name: document.getElementById('newCountryName').value,
-        continent: {
-            code: document.getElementById('newCountryContinentCode').value,
-            name: document.getElementById('newCountryName').value,
-            latitude: document.getElementById('newCountryLatitude').value,
-            longitude: document.getElementById('newCountryLongitude').value,
-            nameEs: document.getElementById('newCountryNameEs').value,
-            nameFr: document.getElementById('newCountryNameFr').value
-        },
+        continent_code: document.getElementById('newCountryContinentCode').value,
         latitude: document.getElementById('newCountryLatitude').value,
         longitude: document.getElementById('newCountryLongitude').value,
+        name: document.getElementById('newCountryName').value,
         nameEs: document.getElementById('newCountryNameEs').value,
         nameFr: document.getElementById('newCountryNameFr').value,
         nameNative: document.getElementById('newCountryNameNative').value,
-        population: document.getElementById('newCountryPopulation').value
+        population: parseInt(document.getElementById('newCountryPopulation').value, 10) // Assurez-vous que la population est un entier
     };
+
     try {
         const response = await axios.post('http://localhost:8000/countries', newCountry, {
             headers: {
