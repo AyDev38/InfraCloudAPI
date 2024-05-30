@@ -18,6 +18,27 @@ document.getElementById('nextPage').addEventListener('click', () => {
     getCountries();
 });
 
+document.addEventListener('DOMContentLoaded', async () => {
+    await populateContinentCodes();
+});
+
+async function populateContinentCodes() {
+    try {
+        const response = await axios.get('http://localhost:8000/continents');
+        const continents = response.data;
+        const continentSelect = document.getElementById('newCountryContinentCode');
+        
+        continents.forEach(continent => {
+            const option = document.createElement('option');
+            option.value = continent.code;
+            option.textContent = continent.code;
+            continentSelect.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error fetching continents:', error);
+    }
+}
+
 async function getCountries() {
     try {
         const response = await axios.get(`http://localhost:8000/countries`);
@@ -29,11 +50,10 @@ async function getCountries() {
         const endIndex = startIndex + itemsPerPage;
         const countriesToDisplay = countries.slice(startIndex, endIndex);
 
-        countriesToDisplay.forEach(async (country) => {
-
+        for (const country of countriesToDisplay) {
             const continentCode = country.continent_code || 'N/A';
-            var continent = await axios.get(`http://localhost:8000/continents/${continentCode}`)
-            var continentName = continent.data.name;
+            const continent = await axios.get(`http://localhost:8000/continents/${continentCode}`);
+            const continentName = continent.data.name;
             const population = country.population || 'N/A';
             const latitude = country.latitude || 'N/A';
             const longitude = country.longitude || 'N/A';
@@ -59,13 +79,13 @@ async function getCountries() {
                     </div>
                     <div class="edit-form" style="display: none;">
                         <div class="form-group">
-                            <input type="text" class="form-control" value="${country.code}" data-field="code" placeholder="Code">
+                            <input type="text" class="form-control" value="${country.code}" data-field="code" placeholder="Code" readonly>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" value="${country.name}" data-field="name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" value="${continentCode}" data-field="continentCode" placeholder="Continent Code">
+                            <input type="hidden" class="form-control" value="${continentCode}" data-field="continent_code">
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" value="${latitude}" data-field="latitude" placeholder="Latitude">
@@ -86,11 +106,12 @@ async function getCountries() {
                             <input type="number" class="form-control" value="${population}" data-field="population" placeholder="Population">
                         </div>
                         <button class="btn btn-primary save-country" data-code="${country.code}">Save</button>
+                        <button class="btn btn-secondary cancel-edit" data-code="${country.code}">Cancel</button>
                     </div>
                 </div>
             `;
             resultContainer.insertAdjacentHTML('beforeend', countryCard);
-        });
+        }
 
         document.getElementById('pageNumber').textContent = `Page ${currentPage}`;
 
@@ -131,6 +152,15 @@ async function getCountries() {
             });
         });
 
+        // Add event listeners for the cancel buttons
+        document.querySelectorAll('.cancel-edit').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const card = event.target.closest('.col-md-4');
+                const editForm = card.querySelector('.edit-form');
+                editForm.style.display = 'none';
+            });
+        });
+
     } catch (error) {
         console.error(error);
     }
@@ -147,24 +177,12 @@ async function deleteCountry(code) {
 
 async function updateCountry(code, updatedCountry) {
     try {
-        await axios.put(`http://localhost:8000/countries/${code}`, {
-            code: updatedCountry.code,
-            continent_code: updatedCountry.continentCode,  // Correct field name
-            latitude: updatedCountry.latitude,
-            longitude: updatedCountry.longitude,
-            name: updatedCountry.name,
-            nameEs: updatedCountry.nameEs,
-            nameFr: updatedCountry.nameFr,
-            nameNative: updatedCountry.nameNative,
-            population: parseInt(updatedCountry.population)
-        });
+        await axios.put(`http://localhost:8000/countries/${code}`, updatedCountry);
         getCountries(); // Refresh the list after update
     } catch (error) {
         console.error(error);
     }
 }
-
-
 
 document.getElementById('getCountryByCode').addEventListener('click', async () => {
     const countryCode = document.getElementById('countryCode').value;
@@ -174,8 +192,8 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         const resultContainer = document.getElementById('countryByCodeResult');
 
         const continentCode = country.continent_code || 'N/A';
-        var continent = await axios.get(`http://localhost:8000/continents/${continentCode}`)
-        var continentName = continent.data.name;
+        const continent = await axios.get(`http://localhost:8000/continents/${continentCode}`);
+        const continentName = continent.data.name;
         const population = country.population || 'N/A';
         const latitude = country.latitude || 'N/A';
         const longitude = country.longitude || 'N/A';
@@ -209,7 +227,7 @@ document.getElementById('createCountryForm').addEventListener('submit', async (e
 
     const newCountry = {
         code: document.getElementById('newCountryCode').value,
-        continent_code: document.getElementById('newCountryContinentCode').value,  // Correct field name
+        continent_code: document.getElementById('newCountryContinentCode').value,
         latitude: document.getElementById('newCountryLatitude').value,
         longitude: document.getElementById('newCountryLongitude').value,
         name: document.getElementById('newCountryName').value,
