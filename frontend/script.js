@@ -31,7 +31,7 @@ async function populateContinentCodes() {
         continents.forEach(continent => {
             const option = document.createElement('option');
             option.value = continent.code;
-            option.textContent = continent.code;
+            option.textContent = continent.name;  // Display the continent name
             continentSelect.appendChild(option);
         });
     } catch (error) {
