@@ -1,150 +1,110 @@
-from fastapi import FastAPI, HTTPException, Query
+from typing import List
+from fastapi import FastAPI, Depends, HTTPException, Query
+from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Optional
-import sqlite3
+import repository as repository
+import models as models
+import schemas as schemas
+from models import SessionLocal, engine
 
-# Crée une instance de l'application FastAPI
+# Créer les tables dans la base de données
+models.Base.metadata.create_all(bind=engine)
+
 app = FastAPI()
 
 # Configuration de CORS
 origins = [
-    "http://localhost:3000",  # Remplacez par les origines que vous souhaitez autoriser
+    "http://localhost:3000",
     "http://127.0.0.1:3000",
-    # Ajoutez d'autres origines si nécessaire
 ]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],  # Autoriser toutes les méthodes HTTP (GET, POST, etc.)
-    allow_headers=["*"],  # Autoriser tous les en-têtes
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-# Modèles de données
-class Continent(BaseModel):
-    code: str
-    latitude: str
-    longitude: str
-    name: str
-    nameEs: str
-    nameFr: str
-
-class Country(BaseModel):
-    code: str
-    continent_code: str
-    latitude: str
-    longitude: str
-    name: str
-    nameEs: str
-    nameFr: str
-    nameNative: str
-    population: int
-
-# Fonction pour obtenir une connexion à la base de données
-def get_db_connection():
-    connection = sqlite3.connect('../bdd/countries.db')
-    connection.row_factory = sqlite3.Row
-    return connection
+# Dépendance pour obtenir la session de la base de données
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 # Route pour lire tous les pays
-@app.get("/countries", response_model=List[Country])
-def read_countries():
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM countries")
-    countries = cursor.fetchall()
-    connection.close()
-    return [Country(**dict(country)) for country in countries]
+@app.get("/countries", response_model=List[schemas.Country])
+def read_countries(db: Session = Depends(get_db)):
+    countries = repository.get_countries(db)
+    return countries
 
 # Route pour lire un pays par code
-@app.get("/countries/{code}", response_model=Country)
-def read_country(code: str):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM countries WHERE code = ?", (code,))
-    country = cursor.fetchone()
-    connection.close()
+@app.get("/countries/{code}", response_model=schemas.Country)
+def read_country(code: str, db: Session = Depends(get_db)):
+    country = repository.get_country(db, code)
     if country is None:
         raise HTTPException(status_code=404, detail="Country not found")
-    return Country(**dict(country))
-
-# Route pour créer un nouveau pays
-@app.post("/countries", response_model=Country)
-def create_country(country: Country):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute(
-        "INSERT INTO countries (code, continent_code, latitude, longitude, name, nameEs, nameFr, nameNative, population) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-        (country.code, country.continent_code, country.latitude, country.longitude, country.name, country.nameEs, country.nameFr, country.nameNative, country.population)
-    )
-    connection.commit()
-    connection.close()
     return country
 
+# Route pour créer un nouveau pays
+@app.post("/countries", response_model=schemas.Country)
+def create_country(country: schemas.CountryCreate, db: Session = Depends(get_db)):
+    return repository.create_country(db=db, country=country)
+
 # Route pour mettre à jour un pays
-@app.put("/countries/{code}", response_model=Country)
-def update_country(code: str, country_update: Country):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute(
-        "UPDATE countries SET code = ?, continent_code = ?, latitude = ?, longitude = ?, name = ?, nameEs = ?, nameFr = ?, nameNative = ?, population = ? WHERE code = ?",
-        (country_update.code, country_update.continent_code, country_update.latitude, country_update.longitude, country_update.name, country_update.nameEs, country_update.nameFr, country_update.nameNative, country_update.population, code)
-    )
-    connection.commit()
-    connection.close()
-    if cursor.rowcount == 0:
+@app.put("/countries/{code}", response_model=schemas.Country)
+def update_country(code: str, country_update: schemas.CountryCreate, db: Session = Depends(get_db)):
+    existing_country = repository.get_country(db, code)
+    if not existing_country:
         raise HTTPException(status_code=404, detail="Country not found")
-    return country_update
+    
+    existing_country.code = country_update.code
+    existing_country.continent_code = country_update.continent_code
+    existing_country.latitude = country_update.latitude
+    existing_country.longitude = country_update.longitude
+    existing_country.name = country_update.name
+    existing_country.nameEs = country_update.nameEs
+    existing_country.nameFr = country_update.nameFr
+    existing_country.nameNative = country_update.nameNative
+    existing_country.population = country_update.population
+    
+    db.commit()
+    db.refresh(existing_country)
+    return existing_country
 
 # Route pour supprimer un pays
-@app.delete("/countries/{code}", response_model=Country)
-def delete_country(code: str):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("DELETE FROM countries WHERE code = ?", (code,))
-    connection.commit()
-    if cursor.rowcount == 0:
+@app.delete("/countries/{code}", response_model=schemas.Country)
+def delete_country(code: str, db: Session = Depends(get_db)):
+    country = repository.delete_country(db, code)
+    if country is None:
         raise HTTPException(status_code=404, detail="Country not found")
-    connection.close()
-    return {"detail": "Country deleted"}
+    return country
 
 # Route pour rechercher des pays par nom
-@app.get("/countries/search/by-name", response_model=List[Country])
-def search_countries_by_name(name: str):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM countries WHERE name LIKE ?", ('%' + name + '%',))
-    countries = cursor.fetchall()
-    connection.close()
+@app.get("/countries/search/by-name", response_model=List[schemas.Country])
+def search_countries_by_name(name: str, db: Session = Depends(get_db)):
+    countries = db.query(models.Country).filter(models.Country.name.like(f"%{name}%")).all()
     if not countries:
         raise HTTPException(status_code=404, detail="No countries found with the given name")
-    return [Country(**dict(country)) for country in countries]
+    return countries
 
 # Route pour rechercher des pays par code de continent
-@app.get("/countries/search/by-continent-code", response_model=List[Country])
-def search_countries_by_continent_code(continent_code: str):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM countries WHERE continent_code = ?", (continent_code,))
-    countries = cursor.fetchall()
-    connection.close()
+@app.get("/countries/search/by-continent-code", response_model=List[schemas.Country])
+def search_countries_by_continent_code(continent_code: str, db: Session = Depends(get_db)):
+    countries = repository.get_countries_by_continent(db, continent_code)
     if not countries:
         raise HTTPException(status_code=404, detail="No countries found in the given continent")
-    return [Country(**dict(country)) for country in countries]
+    return countries
 
 # Route pour rechercher des pays par population supérieure à un chiffre donné
-@app.get("/countries/search/by-population", response_model=List[Country])
-def search_countries_by_population(min_population: int = Query(..., alias="minPopulation")):
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM countries WHERE population > ?", (min_population,))
-    countries = cursor.fetchall()
-    connection.close()
+@app.get("/countries/search/by-population", response_model=List[schemas.Country])
+def search_countries_by_population(min_population: int = Query(..., alias="minPopulation"), db: Session = Depends(get_db)):
+    countries = repository.get_countries_by_population(db, min_population)
     if not countries:
         raise HTTPException(status_code=404, detail="No countries found with population greater than the given number")
-    return [Country(**dict(country)) for country in countries]
+    return countries
 
 # Définition d'une route GET de base avec les différentes commandes de l'API
 @app.get("/")
