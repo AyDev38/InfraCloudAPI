@@ -106,4 +106,4 @@ Voici les différents endpoints de l'API disponibles :
 
 ## Schéma de du code :
 
-/SchemaAPI.drawio.png
+`./SchemaAPI.drawio.png`
