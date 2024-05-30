@@ -1,5 +1,5 @@
 from typing import List
-from fastapi import FastAPI, Depends, HTTPException, Query
+from fastapi import FastAPI, Depends, HTTPException, Query, APIRouter
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 import repository as repository
@@ -122,3 +122,23 @@ def read_root():
             "GET /countries/search/by-population": "Search countries by population greater than a given number (query param: minPopulation)"
         }
     }
+
+# Router for continents
+continent_router = APIRouter()
+
+# Route to read a continent by code
+@continent_router.get("/continents/{code}", response_model=schemas.Continent)
+def read_continent(code: str, db: Session = Depends(get_db)):
+    continent = repository.get_continent(db, code)
+    if continent is None:
+        raise HTTPException(status_code=404, detail="Continent not found")
+    return continent
+
+# Route to read all continents
+@continent_router.get("/continents", response_model=List[schemas.Continent])
+def read_continents(db: Session = Depends(get_db)):
+    continents = repository.get_continents(db)
+    return continents
+
+# Include continent_router in the main app
+app.include_router(continent_router)
