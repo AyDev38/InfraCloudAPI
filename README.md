@@ -102,7 +102,8 @@ Voici les différents endpoints de l'API disponibles :
 - `DELETE /countries/{code}` : Supprimer un pays par son code.
 - `GET /countries/search/by-name` : Rechercher des pays par nom.
 - `GET /countries/search/by-continent-code` : Rechercher des pays par code de continent.
-- `GET /countries/search/by-population` : Rechercher des pays avec une population supérieure à un nombre spécifié.
+- `GET /continents/` : Récupérer la liste de tous les continents.
+- `GET /continents/{code}` : Récupérer des informations sur un continent spécifique par son code.
 
 ## Schéma de du code :
 

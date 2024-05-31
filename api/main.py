@@ -119,7 +119,9 @@ def read_root():
             "DELETE /countries/{code}": "Delete a country by code",
             "GET /countries/search/by-name": "Search countries by name (query param: name)",
             "GET /countries/search/by-continent-code": "Search countries by continent code (query param: continent_code)",
-            "GET /countries/search/by-population": "Search countries by population greater than a given number (query param: minPopulation)"
+            "GET /countries/search/by-population": "Search countries by population greater than a given number (query param: minPopulation)",
+            "GET /continents/": "Read all continents",
+            "GET /continents/{code}": "Read a continent by code"
         }
     }
 
