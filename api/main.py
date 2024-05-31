@@ -91,10 +91,13 @@ def update_country(code: str, country_update: schemas.CountryCreate, db: Session
 # Route pour supprimer un pays
 @app.delete("/countries/{code}", response_model=schemas.Country)
 def delete_country(code: str, db: Session = Depends(get_db)):
-    country = repository.delete_country(db, code)
+    country = repository.get_country(db, code)
     if country is None:
         raise HTTPException(status_code=404, detail="Country not found")
+    db.delete(country)
+    db.commit()
     return country
+
 
 # Route pour rechercher des pays par nom
 @app.get("/countries/search/by-name", response_model=List[schemas.Country])
