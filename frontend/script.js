@@ -58,7 +58,7 @@ async function getCountries() {
             const population = country.population || 'N/A';
             const latitude = country.latitude || 'N/A';
             const longitude = country.longitude || 'N/A';
-            const pib = country.pib || 'N/A';
+            const pib = country.pib;
 
             const countryCard = `
                 <div class="col-md-4 mb-4">
@@ -204,7 +204,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         const population = country.population || 'N/A';
         const latitude = country.latitude || 'N/A';
         const longitude = country.longitude || 'N/A';
-        const pib = country.pib || 'N/A';
+        const pib = country.pib;
 
         resultContainer.innerHTML = `
             <div class="card mt-4">
