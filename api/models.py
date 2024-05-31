@@ -35,5 +35,11 @@ class Country(Base):
     nameFr = Column(String)
     nameNative = Column(Text)
     population = Column(Integer)
+    pib = Column(Integer, default=0)
 
     continent = relationship("Continent", back_populates="countries")
+
+class EncryptKey(Base):
+    __tablename__ = "encrypt_key"
+
+    key = Column(Text, primary_key=True)

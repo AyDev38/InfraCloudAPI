@@ -51,12 +51,14 @@ async function getCountries() {
         const countriesToDisplay = countries.slice(startIndex, endIndex);
 
         for (const country of countriesToDisplay) {
+            console.log(country.pib); // Vérifiez que PIB est bien déchiffré ici
             const continentCode = country.continent_code || 'N/A';
             const continent = await axios.get(`http://localhost:8000/continents/${continentCode}`);
             const continentName = continent.data.name;
             const population = country.population || 'N/A';
             const latitude = country.latitude || 'N/A';
             const longitude = country.longitude || 'N/A';
+            const pib = country.pib || 'N/A';
 
             const countryCard = `
                 <div class="col-md-4 mb-4">
@@ -71,7 +73,8 @@ async function getCountries() {
                                 <strong>Continent:</strong> ${continentName}<br>
                                 <strong>Population:</strong> ${population}<br>
                                 <strong>Latitude:</strong> ${latitude}<br>
-                                <strong>Longitude:</strong> ${longitude}
+                                <strong>Longitude:</strong> ${longitude}<br>
+                                <strong>PIB:</strong> ${pib} $<br>
                             </p>
                             <button class="btn btn-danger delete-country" data-code="${country.code}">Delete</button>
                             <button class="btn btn-success edit-country" data-code="${country.code}">Edit</button>
@@ -104,6 +107,9 @@ async function getCountries() {
                         </div>
                         <div class="form-group">
                             <input type="number" class="form-control" value="${population}" data-field="population" placeholder="Population">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" value="${pib}" data-field="pib" placeholder="Pib">
                         </div>
                         <button class="btn btn-primary save-country" data-code="${country.code}">Save</button>
                         <button class="btn btn-secondary cancel-edit" data-code="${country.code}">Cancel</button>
@@ -166,6 +172,7 @@ async function getCountries() {
     }
 }
 
+
 async function deleteCountry(code) {
     try {
         await axios.delete(`http://localhost:8000/countries/${code}`);
@@ -197,6 +204,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         const population = country.population || 'N/A';
         const latitude = country.latitude || 'N/A';
         const longitude = country.longitude || 'N/A';
+        const pib = country.pib || 'N/A';
 
         resultContainer.innerHTML = `
             <div class="card mt-4">
@@ -212,7 +220,8 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
                         <strong>Continent:</strong> ${continentName}<br>
                         <strong>Population:</strong> ${population}<br>
                         <strong>Latitude:</strong> ${latitude}<br>
-                        <strong>Longitude:</strong> ${longitude}
+                        <strong>Longitude:</strong> ${longitude}<br>
+                        <strong>PIB:</strong> ${pib} $
                     </p>
                 </div>
             </div>
@@ -221,6 +230,7 @@ document.getElementById('getCountryByCode').addEventListener('click', async () =
         console.error(error);
     }
 });
+
 
 document.getElementById('createCountryForm').addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -234,7 +244,8 @@ document.getElementById('createCountryForm').addEventListener('submit', async (e
         nameEs: document.getElementById('newCountryNameEs').value,
         nameFr: document.getElementById('newCountryNameFr').value,
         nameNative: document.getElementById('newCountryNameNative').value,
-        population: parseInt(document.getElementById('newCountryPopulation').value)
+        population: parseInt(document.getElementById('newCountryPopulation').value),
+        pib: parseInt(document.getElementById('newCountryPib').value)
     };
 
     try {

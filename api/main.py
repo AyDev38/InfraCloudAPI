@@ -6,6 +6,7 @@ import repository as repository
 import models as models
 import schemas as schemas
 from models import SessionLocal, engine
+from utils import encrypt_data, decrypt_data
 
 # Créer les tables dans la base de données
 models.Base.metadata.create_all(bind=engine)
@@ -40,7 +41,7 @@ def read_countries(db: Session = Depends(get_db)):
     countries = repository.get_countries(db)
     return countries
 
-# Route pour lire un pays par code
+# Route pour lire un pays par code et déchiffrer le PIB
 @app.get("/countries/{code}", response_model=schemas.Country)
 def read_country(code: str, db: Session = Depends(get_db)):
     country = repository.get_country(db, code)
@@ -51,7 +52,11 @@ def read_country(code: str, db: Session = Depends(get_db)):
 # Route pour créer un nouveau pays
 @app.post("/countries", response_model=schemas.Country)
 def create_country(country: schemas.CountryCreate, db: Session = Depends(get_db)):
-    return repository.create_country(db=db, country=country)
+    new_country = repository.create_country(db=db, country=country)
+    if new_country.pib:
+        new_country.pib = decrypt_data(new_country.pib)
+    return new_country
+
 
 # Route pour mettre à jour un pays
 @app.put("/countries/{code}", response_model=schemas.Country)
@@ -70,9 +75,18 @@ def update_country(code: str, country_update: schemas.CountryCreate, db: Session
     existing_country.nameNative = country_update.nameNative
     existing_country.population = country_update.population
     
+    if country_update.pib:
+        existing_country.pib = encrypt_data(country_update.pib)
+    
     db.commit()
     db.refresh(existing_country)
+
+    if existing_country.pib:
+        existing_country.pib = decrypt_data(existing_country.pib)
+
     return existing_country
+
+
 
 # Route pour supprimer un pays
 @app.delete("/countries/{code}", response_model=schemas.Country)
@@ -106,6 +120,22 @@ def search_countries_by_population(min_population: int = Query(..., alias="minPo
         raise HTTPException(status_code=404, detail="No countries found with population greater than the given number")
     return countries
 
+
+# Route pour inserer un pib dans un pays
+@app.put("/countries/{code}/pib/{data}", response_model=schemas.Country)
+def update_country_pib(code: str, data: int, db: Session = Depends(get_db)):
+    existing_country = repository.get_country(db, code)
+    if not existing_country:
+        raise HTTPException(status_code=404, detail="Country not found")
+    # Encryper la data
+    data = encrypt_data(data)
+    existing_country.pib = data
+    
+    db.commit()
+    db.refresh(existing_country)
+    return existing_country
+
+
 # Définition d'une route GET de base avec les différentes commandes de l'API
 @app.get("/")
 def read_root():
@@ -132,6 +162,9 @@ continent_router = APIRouter()
 @continent_router.get("/continents/{code}", response_model=schemas.Continent)
 def read_continent(code: str, db: Session = Depends(get_db)):
     continent = repository.get_continent(db, code)
+    for country in continent.countries:
+        if country.pib:
+            country.pib = decrypt_data(country.pib)
     if continent is None:
         raise HTTPException(status_code=404, detail="Continent not found")
     return continent
@@ -140,6 +173,10 @@ def read_continent(code: str, db: Session = Depends(get_db)):
 @continent_router.get("/continents", response_model=List[schemas.Continent])
 def read_continents(db: Session = Depends(get_db)):
     continents = repository.get_continents(db)
+    for continent in continents:
+        for country in continent.countries:
+            if country.pib:
+                country.pib = decrypt_data(country.pib)
     return continents
 
 # Include continent_router in the main app

@@ -104,6 +104,8 @@ Voici les différents endpoints de l'API disponibles :
 - `GET /countries/search/by-continent-code` : Rechercher des pays par code de continent.
 - `GET /continents/` : Récupérer la liste de tous les continents.
 - `GET /continents/{code}` : Récupérer des informations sur un continent spécifique par son code.
+- `POST /countries/{code}/pib/{data}` : Récupérer des informations sur un continent spécifique par son code.
+- `GET /countries/{code}/pib` : Récupérer des informations sur un continent spécifique par son code.
 
 ## Schéma de du code :
 

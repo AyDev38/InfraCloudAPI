@@ -28,6 +28,7 @@ class CountryBase(BaseModel):
     nameFr: str
     nameNative: str
     population: int
+    pib: int
 
 class CountryCreate(CountryBase):
     pass

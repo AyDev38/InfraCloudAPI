@@ -26,9 +26,17 @@ def create_database():
         nameFr TEXT,
         nameNative TEXT,
         population INTEGER,
+        pib INTEGER DEFAULT 0,
         FOREIGN KEY (continent_code) REFERENCES continents (code)
     )
     ''')
+
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS encrypt_key (
+        key TEXT PRIMARY KEY not null
+    )
+    ''')
+
 
     connection.commit()
     connection.close()
